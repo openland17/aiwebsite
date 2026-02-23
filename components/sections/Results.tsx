@@ -74,17 +74,19 @@ function StatDisplay({
       initial={{ opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-8 text-center"
+      className="flex min-h-64 flex-col rounded-2xl border border-white/[0.08] bg-white/[0.03] p-8"
     >
-      <div>
-        {card.isNumber && card.stat !== null ? (
-          <CountUpNumber value={card.stat} className={card.statClass} />
-        ) : (
-          <span className={card.statClass}>{card.statDisplay}</span>
-        )}
+      <div className="flex h-full flex-col items-center justify-center text-center">
+        <div>
+          {card.isNumber && card.stat !== null ? (
+            <CountUpNumber value={card.stat} className={card.statClass} />
+          ) : (
+            <span className={card.statClass}>{card.statDisplay}</span>
+          )}
+        </div>
+        <p className="mt-4 font-medium text-white">{card.label}</p>
+        <p className="mt-2 text-sm text-white/60">{card.subtext}</p>
       </div>
-      <p className="mt-4 font-medium text-white">{card.label}</p>
-      <p className="mt-2 text-sm text-white/60">{card.subtext}</p>
     </motion.div>
   );
 }
