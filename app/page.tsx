@@ -7,6 +7,7 @@ import { HowItWorks } from "@/components/sections/HowItWorks";
 import { Results } from "@/components/sections/Results";
 import { WhoItsFor } from "@/components/sections/WhoItsFor";
 import { Pricing } from "@/components/sections/Pricing";
+import { BookDemo } from "@/components/sections/BookDemo";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Results />
         <WhoItsFor />
         <Pricing />
+        <BookDemo />
         <FinalCTA />
       </main>
       <Footer />

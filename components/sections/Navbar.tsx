@@ -73,14 +73,15 @@ export function Navbar() {
 
         {/* Right: CTA + hamburger */}
         <div className="flex items-center gap-3">
-          <Link
-            href="#contact"
-            onClick={(e) => handleNavClick(e, "#contact")}
+          <a
+            href="https://calendly.com/zephyr-systems/ai-demo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
-            aria-label="Book a demo — scroll to contact"
+            aria-label="Book a demo"
           >
             Book a Demo
-          </Link>
+          </a>
           <button
             type="button"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -143,16 +144,16 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <Link
-                  href="#contact"
-                  onClick={(e) => {
-                    handleNavClick(e, "#contact", () => setMobileOpen(false));
-                  }}
+                <a
+                  href="https://calendly.com/zephyr-systems/ai-demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-4 w-full rounded-lg bg-accent px-4 py-3 text-center text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F]"
                   aria-label="Book a demo"
+                  onClick={() => setMobileOpen(false)}
                 >
                   Book a Demo
-                </Link>
+                </a>
               </nav>
             </motion.div>
           </>

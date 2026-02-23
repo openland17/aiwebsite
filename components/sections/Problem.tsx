@@ -28,31 +28,31 @@ export function Problem() {
   return (
     <section
       id="problem"
-      className="border-t border-white/5 bg-[#0D0D12] pt-24 pb-24 lg:py-40"
+      className="border-t border-white/5 bg-[#0D0D12] px-8 py-40 lg:px-16"
     >
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
-          {/* Left side */}
+      <div className="mx-auto max-w-7xl">
+        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-5 lg:gap-16">
+          {/* Left column — 3 cols, max-w-2xl for text */}
           <FadeContent
             duration={0.6}
             threshold={0.1}
-            className="lg:w-1/2"
+            className="max-w-2xl lg:col-span-3"
           >
             <p className="text-xs uppercase tracking-widest text-accent">
               THE PROBLEM
             </p>
-            <h2 className="mt-4 max-w-xl text-4xl font-bold leading-tight text-white lg:text-5xl">
+            <h2 className="mt-4 text-5xl font-bold leading-tight text-white lg:text-6xl">
               Every missed enquiry is revenue you&apos;ll never see
             </h2>
-            <p className="mt-8 max-w-md text-white/60">
+            <p className="mt-8 max-w-lg text-white/60">
               Most hospitality businesses lose bookings and orders every single
               day — not because they have a bad product, but because customers
               can&apos;t reach them when they want to buy.
             </p>
           </FadeContent>
 
-          {/* Right side — 3 cards */}
-          <div className="flex flex-col gap-5 lg:w-1/2">
+          {/* Right column — 2 cols, cards full width of column */}
+          <div className="flex w-full flex-col gap-5 lg:col-span-2">
             {CARDS.map((card, i) => {
               const Icon = card.icon;
               return (

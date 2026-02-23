@@ -25,7 +25,6 @@ export const COPY = {
   },
   pricing: {
     headline: "Simple pricing. No surprises.",
-    price: "$200/month — everything included",
   },
   finalCta: {
     headline: "Ready to stop losing orders after hours?",

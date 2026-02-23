@@ -26,11 +26,8 @@ export function PricingSection() {
         transition={{ duration: 0.5, delay: 0.1 }}
       >
         <Card className="border-slate-200/60 bg-white text-center">
-          <p className="text-3xl font-bold text-accent sm:text-4xl">
-            {COPY.pricing.price}
-          </p>
-          <p className="mt-2 text-muted">
-            Setup, training, hosting and support. No hidden fees.
+          <p className="text-muted">
+            Tailored to your business. Book a call to get a quote.
           </p>
           <div className="mt-8">
             <CTAButton href="#contact" variant="primary" size="large">

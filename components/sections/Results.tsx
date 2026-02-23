@@ -5,12 +5,12 @@ import { motion, useInView } from "framer-motion";
 
 const CARDS = [
   {
-    stat: 3,
-    isNumber: true,
-    statDisplay: "3",
-    label: "bookings per month to cover the full cost",
+    stat: null,
+    isNumber: false,
+    statDisplay: "2x",
+    label: "average increase in after-hours enquiries",
     subtext:
-      "At $90/person for a workshop, just 3 extra bookings = $270. Your assistant is paid for.",
+      "Businesses with 24/7 automated responses capture enquiries that would have gone cold overnight.",
     statClass: "text-5xl font-bold text-accent sm:text-6xl md:text-7xl",
   },
   {
@@ -100,8 +100,8 @@ export function Results() {
           The math is simple
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-white/60">
-          Your AI assistant needs to capture a handful of bookings a month to
-          pay for itself. Everything else is pure margin.
+          Your AI assistant captures enquiries and bookings around the clock.
+          More leads, more conversions, less manual follow-up.
         </p>
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">

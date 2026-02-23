@@ -69,14 +69,15 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center"
         >
-          <Link
-            href="#contact"
-            onClick={scrollTo("#contact")}
+          <a
+            href="https://calendly.com/zephyr-systems/ai-demo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-full rounded-xl bg-accent px-6 py-3 text-center font-medium text-white transition-all hover:scale-[1.02] hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] sm:w-auto"
-            aria-label="See a live demo, scrolls to contact"
+            aria-label="See a live demo"
           >
             See a Live Demo
-          </Link>
+          </a>
           <Link
             href="#how-it-works"
             onClick={scrollTo("#how-it-works")}

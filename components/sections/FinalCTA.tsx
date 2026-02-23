@@ -6,7 +6,6 @@ import { Phone, Mail } from "lucide-react";
 export function FinalCTA() {
   return (
     <section
-      id="contact"
       className="relative overflow-hidden py-40"
     >
       <Aurora
@@ -28,9 +27,11 @@ export function FinalCTA() {
           like for your business.
         </p>
         <a
-          href="mailto:mattsmith.info@gmail.com?subject=Zephyr%20Systems%20-%20Book%20a%20Demo"
+          href="https://calendly.com/zephyr-systems/ai-demo"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-10 inline-block w-full max-w-xs rounded-xl bg-accent px-8 py-4 text-center text-lg font-semibold text-white transition-all hover:scale-[1.02] hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] sm:w-auto"
-          aria-label="Book a demo by email"
+          aria-label="Book a demo"
         >
           Book a Demo →
         </a>
