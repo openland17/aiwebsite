@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -42,6 +43,30 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body className={`${inter.className} antialiased`}>
         {children}
+        <Script
+          id="voiceflow-chat-widget"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '699e9db2e853fa16221d6ca7' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production',
+                    voice: {
+                      url: 'https://runtime-api.voiceflow.com'
+                    }
+                  });
+                };
+                v.src = 'https://cdn.voiceflow.com/widget-next/bundle.mjs';
+                v.type = 'text/javascript';
+                s.parentNode.insertBefore(v, s);
+              })(document, 'script');
+            `,
+          }}
+        />
       </body>
     </html>
   );
