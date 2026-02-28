@@ -47,12 +47,12 @@ export function Footer() {
           {/* Right */}
           <div className="flex flex-col gap-2 text-sm text-white/50">
             <a
-              href="mailto:mattsmith.info@gmail.com"
+              href="mailto:zephyrsystemsau@gmail.com"
               className="flex items-center gap-2 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] rounded"
               aria-label="Email us"
             >
               <Mail className="h-4 w-4 shrink-0" aria-hidden />
-              mattsmith.info@gmail.com
+              zephyrsystemsau@gmail.com
             </a>
             <a
               href="tel:+61407733940"
@@ -63,14 +63,14 @@ export function Footer() {
               +61 407 733 940
             </a>
             <a
-              href="https://linkedin.com/in/mattsmithtech"
+              href="https://linkedin.com/company/zephyrsystems-ai"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] rounded"
-              aria-label="LinkedIn profile"
+              aria-label="LinkedIn"
             >
               <Linkedin className="h-4 w-4 shrink-0" aria-hidden />
-              linkedin.com/in/mattsmithtech
+              linkedin.com/company/zephyrsystems-ai
             </a>
           </div>
         </div>

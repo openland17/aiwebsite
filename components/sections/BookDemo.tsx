@@ -43,12 +43,12 @@ export function BookDemo() {
             </ul>
             <div className="mt-8 flex flex-col gap-2 text-sm text-white/50">
               <a
-                href="mailto:mattsmith.info@gmail.com"
+                href="mailto:zephyrsystemsau@gmail.com"
                 className="flex items-center gap-2 transition hover:text-white/70 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-[#0D0D12] rounded"
                 aria-label="Email"
               >
                 <Mail className="h-4 w-4 shrink-0" aria-hidden />
-                mattsmith.info@gmail.com
+                zephyrsystemsau@gmail.com
               </a>
               <a
                 href="tel:+61407733940"

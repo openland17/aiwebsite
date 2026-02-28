@@ -38,9 +38,9 @@ export const COPY = {
 } as const;
 
 export const CONTACT = {
-  email: "mattsmith.info@gmail.com",
+  email: "zephyrsystemsau@gmail.com",
   phone: "+61 407 733 940",
-  linkedin: "https://linkedin.com/in/mattsmithtech",
+  linkedin: "https://linkedin.com/company/zephyrsystems-ai",
   website: "https://mjsmith.tech",
 } as const;
 

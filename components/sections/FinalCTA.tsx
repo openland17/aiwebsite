@@ -45,12 +45,12 @@ export function FinalCTA() {
             +61 407 733 940
           </a>
           <a
-            href="mailto:mattsmith.info@gmail.com"
+            href="mailto:zephyrsystemsau@gmail.com"
             className="flex items-center gap-2 transition hover:text-white/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0F] rounded"
-            aria-label="Email mattsmith.info@gmail.com"
+            aria-label="Email"
           >
             <Mail className="h-4 w-4" aria-hidden />
-            mattsmith.info@gmail.com
+            zephyrsystemsau@gmail.com
           </a>
         </div>
       </div>
