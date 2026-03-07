@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const SITE_URL = "https://mjsconsulting.com.au";
+const SITE_URL = "https://mjs-consulting.com.au";
 
 export const metadata: Metadata = {
   title: "MJS Consulting — AI Automation for Business",
