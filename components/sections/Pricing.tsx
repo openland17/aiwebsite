@@ -56,11 +56,13 @@ export function Pricing() {
                     delay={i * 4}
                     size={150}
                   />
-                  <Icon className="h-8 w-8 text-accent" aria-hidden />
-                  <h3 className="mt-4 text-xl font-bold text-gray-900">
-                    {model.title}
-                  </h3>
-                  <p className="mt-3 text-gray-600">{model.description}</p>
+                  <div className="relative z-10">
+                    <Icon className="h-8 w-8 text-accent" aria-hidden />
+                    <h3 className="mt-4 text-xl font-bold text-gray-900">
+                      {model.title}
+                    </h3>
+                    <p className="mt-3 text-gray-600">{model.description}</p>
+                  </div>
                 </div>
               </BlurFade>
             );
