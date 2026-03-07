@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Mail, Phone } from "lucide-react";
 import { CONTACT } from "@/lib/constants";
 
@@ -21,13 +22,22 @@ export function Footer() {
     <footer className="border-t border-gray-100 bg-white py-12">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          <div>
-            <p className="font-bold tracking-wide text-sm text-gray-900">
-              MJS CONSULTING
-            </p>
-            <p className="mt-2 text-sm text-muted">
-              Based in Brisbane. Working with businesses across Australia.
-            </p>
+          <div className="flex items-start gap-4">
+            <Image
+              src="/logo.png"
+              alt="MJS Consulting"
+              width={128}
+              height={128}
+              className="-mt-2 h-32 w-32 shrink-0 object-contain"
+            />
+            <div className="pt-5">
+              <p className="font-bold tracking-wide text-sm text-gray-900">
+                MJS CONSULTING
+              </p>
+              <p className="mt-2 text-sm text-muted">
+                Based in Brisbane. Working with businesses across Australia.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col gap-2">

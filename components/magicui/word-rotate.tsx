@@ -20,7 +20,7 @@ export function WordRotate({ words, duration = 2500, className }: WordRotateProp
   }, [words, duration]);
 
   return (
-    <div className="overflow-hidden inline-flex">
+    <span className="overflow-hidden inline-flex">
       <AnimatePresence mode="wait">
         <motion.span
           key={words[index]}
@@ -33,6 +33,6 @@ export function WordRotate({ words, duration = 2500, className }: WordRotateProp
           {words[index]}
         </motion.span>
       </AnimatePresence>
-    </div>
+    </span>
   );
 }
