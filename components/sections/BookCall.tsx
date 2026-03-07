@@ -62,7 +62,7 @@ export function BookCall() {
           <BlurFade inView delay={0.2} inViewMargin="-100px">
             <div className="rounded-2xl overflow-hidden border border-gray-200">
               <InlineWidget
-                url="https://calendly.com/zephyr-systems/ai-demo"
+                url="https://calendly.com/mjs-consulting/ai-demo"
                 styles={{
                   height: "650px",
                   borderRadius: "16px",

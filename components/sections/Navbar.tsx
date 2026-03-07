@@ -84,7 +84,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
-            href="https://calendly.com/zephyr-systems/ai-demo"
+            href="https://calendly.com/mjs-consulting/ai-demo"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
@@ -154,7 +154,7 @@ export function Navbar() {
                   </Link>
                 ))}
                 <a
-                  href="https://calendly.com/zephyr-systems/ai-demo"
+                  href="https://calendly.com/mjs-consulting/ai-demo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 w-full rounded-lg bg-accent px-4 py-3 text-center text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"

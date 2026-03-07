@@ -71,7 +71,7 @@ export function Pricing() {
 
         <BlurFade inView delay={0.4} inViewMargin="-50px">
           <a
-            href="https://calendly.com/zephyr-systems/ai-demo"
+            href="https://calendly.com/mjs-consulting/ai-demo"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-12 inline-block"

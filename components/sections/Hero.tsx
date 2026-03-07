@@ -84,7 +84,7 @@ export function Hero() {
           className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:flex-wrap sm:justify-center"
         >
           <a
-            href="https://calendly.com/zephyr-systems/ai-demo"
+            href="https://calendly.com/mjs-consulting/ai-demo"
             target="_blank"
             rel="noopener noreferrer"
           >

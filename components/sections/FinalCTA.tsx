@@ -26,7 +26,7 @@ export function FinalCTA() {
           not.
         </p>
         <a
-          href="https://calendly.com/zephyr-systems/ai-demo"
+          href="https://calendly.com/mjs-consulting/ai-demo"
           target="_blank"
           rel="noopener noreferrer"
           className="mt-10 inline-block"
