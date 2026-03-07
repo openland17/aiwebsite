@@ -11,6 +11,6 @@ export const NAV_LINKS = [
 ] as const;
 
 export const CONTACT = {
-  email: "hello@mjsconsulting.com.au",
+  email: "mattsmith.info@gmail.com",
   phone: "+61 407 733 940",
 } as const;

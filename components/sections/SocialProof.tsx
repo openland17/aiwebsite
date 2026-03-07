@@ -1,46 +1,46 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
   HardHat,
   UtensilsCrossed,
   Briefcase,
   Building2,
+  Factory,
+  Stethoscope,
 } from "lucide-react";
+import { Marquee } from "@/components/magicui/marquee";
 
 const PILLS = [
   { icon: HardHat, label: "Construction" },
   { icon: Building2, label: "Property Development" },
   { icon: UtensilsCrossed, label: "Hospitality" },
   { icon: Briefcase, label: "Professional Services" },
+  { icon: Factory, label: "Manufacturing" },
+  { icon: Stethoscope, label: "Healthcare" },
 ] as const;
+
+function Pill({ icon: Icon, label }: { icon: typeof HardHat; label: string }) {
+  return (
+    <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm text-gray-600 shadow-sm">
+      <Icon className="h-4 w-4 shrink-0 text-accent" />
+      <span>{label}</span>
+    </div>
+  );
+}
 
 export function SocialProof() {
   return (
-    <section className="border-y border-gray-100 bg-light py-6">
+    <section className="border-y border-gray-100 bg-light py-6 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6">
         <p className="mb-4 text-center text-xs uppercase tracking-widest text-muted">
           Working with businesses across Australia
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          {PILLS.map((item, i) => {
-            const Icon = item.icon;
-            return (
-              <motion.div
-                key={item.label}
-                initial={{ opacity: 0, y: 8 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-20px" }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
-                className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-600"
-              >
-                <Icon className="h-3.5 w-3.5 shrink-0 text-accent" />
-                <span>{item.label}</span>
-              </motion.div>
-            );
-          })}
-        </div>
       </div>
+      <Marquee pauseOnHover className="[--duration:30s]">
+        {PILLS.map((item) => (
+          <Pill key={item.label} icon={item.icon} label={item.label} />
+        ))}
+      </Marquee>
     </section>
   );
 }
