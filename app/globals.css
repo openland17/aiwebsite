@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #ffffff;
-  --muted: #94a3b8;
-  --accent: #4f6ef7;
-  --accent-secondary: #a78bfa;
-  --section-light: #f8f9ff;
-  --border-subtle: rgba(255, 255, 255, 0.08);
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --accent-dark: #1b2a4a;
+  --section-light: #f8fafc;
+  --border-subtle: rgba(31, 41, 55, 0.1);
 }
 
-/* Base styles */
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -25,34 +24,28 @@ body {
   min-height: 100vh;
 }
 
-/* Focus states for accessibility (WCAG) */
 a:focus-visible,
 button:focus-visible {
   outline: none;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--section-light);
 }
-
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(31, 41, 55, 0.2);
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(31, 41, 55, 0.35);
 }
-
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.15) var(--background);
+  scrollbar-color: rgba(31, 41, 55, 0.2) var(--section-light);
 }
 
 @layer utilities {

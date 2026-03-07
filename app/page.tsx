@@ -1,13 +1,12 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
 import { SocialProof } from "@/components/sections/SocialProof";
-import { Problem } from "@/components/sections/Problem";
-import { Solution } from "@/components/sections/Solution";
-import { HowItWorks } from "@/components/sections/HowItWorks";
+import { WhatWeDo } from "@/components/sections/WhatWeDo";
+import { Industries } from "@/components/sections/Industries";
+import { HowWeWork } from "@/components/sections/HowWeWork";
 import { Results } from "@/components/sections/Results";
-import { WhoItsFor } from "@/components/sections/WhoItsFor";
 import { Pricing } from "@/components/sections/Pricing";
-import { BookDemo } from "@/components/sections/BookDemo";
+import { BookCall } from "@/components/sections/BookCall";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -18,13 +17,12 @@ export default function Home() {
       <main>
         <Hero />
         <SocialProof />
-        <Problem />
-        <Solution />
-        <HowItWorks />
+        <WhatWeDo />
+        <Industries />
+        <HowWeWork />
         <Results />
-        <WhoItsFor />
         <Pricing />
-        <BookDemo />
+        <BookCall />
         <FinalCTA />
       </main>
       <Footer />

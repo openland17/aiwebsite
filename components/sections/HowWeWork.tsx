@@ -1,51 +1,50 @@
 "use client";
 
-import { Search, Code, Upload, TrendingUp } from "lucide-react";
+import { Search, PenTool, Code, LifeBuoy } from "lucide-react";
 
 const STEPS = [
   {
     step: 1,
     icon: Search,
-    title: "We learn your business",
+    title: "Discovery",
     description:
-      "Your menu, bookings, locations, and team workflow. We do the research.",
+      "We learn how your business actually operates. The manual processes, the spreadsheets, the pain points.",
   },
   {
     step: 2,
-    icon: Code,
-    title: "We build your assistant",
+    icon: PenTool,
+    title: "Design",
     description:
-      "Custom built, branded to your business, tested end to end before you see it.",
+      "We map the solution architecture. You see exactly what we're building before we write a line of code.",
   },
   {
     step: 3,
-    icon: Upload,
-    title: "We go live on your site",
+    icon: Code,
+    title: "Build",
     description:
-      "One line of code added to your site. Your developer can do it in 5 minutes.",
+      "Custom-built, tested end to end. Typically live within 1–2 weeks.",
   },
   {
     step: 4,
-    icon: TrendingUp,
-    title: "Orders come in automatically",
+    icon: LifeBuoy,
+    title: "Support",
     description:
-      "Bookings, orders and enquiries captured 24/7. You wake up to confirmed revenue.",
+      "Ongoing refinement. Your business changes, your tools evolve with it.",
   },
 ] as const;
 
-export function HowItWorks() {
+export function HowWeWork() {
   return (
-    <section id="how-it-works" className="py-32">
+    <section id="how-we-work" className="bg-accent-dark py-32">
       <div className="mx-auto max-w-7xl px-6 text-center">
-        <p className="text-xs uppercase tracking-widest text-accent">
-          THE PROCESS
+        <p className="text-xs uppercase tracking-widest text-blue-300">
+          HOW WE WORK
         </p>
         <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-          Live on your site in a week
+          From discovery to delivery
         </h2>
 
         <div className="relative mt-16 grid grid-cols-1 gap-8 md:grid-cols-4">
-          {/* Connecting line on desktop */}
           <div
             className="absolute left-0 right-0 top-8 hidden border-t border-white/10 md:block"
             aria-hidden
@@ -63,9 +62,11 @@ export function HowItWorks() {
                 >
                   {item.step}
                 </span>
-                <Icon className="mt-2 h-8 w-8 text-accent" aria-hidden />
+                <Icon className="mt-2 h-8 w-8 text-blue-300" aria-hidden />
                 <h3 className="mt-4 font-bold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm text-white/60">{item.description}</p>
+                <p className="mt-2 text-sm text-white/60">
+                  {item.description}
+                </p>
               </div>
             );
           })}

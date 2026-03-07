@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0A0A0F",
-        accent: "#4F6EF7",
-        purple: "#A78BFA",
-        light: "#F8F9FF",
-        foreground: "var(--foreground)",
-        muted: "var(--muted)",
-        "section-light": "var(--section-light)",
-        "border-subtle": "var(--border-subtle)",
+        background: "#FFFFFF",
+        foreground: "#1F2937",
+        accent: "#2563EB",
+        "accent-dark": "#1B2A4A",
+        muted: "#6B7280",
+        light: "#F8FAFC",
+        "section-dark": "#1B2A4A",
+        "border-subtle": "rgba(31, 41, 55, 0.1)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -27,10 +27,7 @@ const config: Config = {
         "fade-in-down": "fade-in-down 0.5s ease-out forwards",
       },
       keyframes: {
-        "fade-in": {
-          "0%": { opacity: "0" },
-          "100%": { opacity: "1" },
-        },
+        "fade-in": { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
         "fade-in-up": {
           "0%": { opacity: "0", transform: "translateY(16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
