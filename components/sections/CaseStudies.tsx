@@ -9,31 +9,31 @@ const CASE_STUDIES = [
     name: "PARC Finishes",
     client: "Engage Group",
     description:
-      "Finish scheduling and tracking system for a multi-unit residential development. Real-time visibility across finishes, trades, and project milestones \u2014 replacing disconnected manual processes with a single production tool.",
+      "Finish schedule management and tracking for a multi-unit residential development. Real-time visibility across finishes, trades, and project milestones.",
     stats: [
       { value: "3", label: "tools shipped" },
-      { value: "2-week", label: "delivery" },
+      { value: "2 weeks", label: "to production" },
     ],
   },
   {
     industry: "HOSPITALITY",
-    name: "Rise Bakery",
+    name: "Operations Platform",
     client: "Rise Bakery",
     description:
-      "Integrated operations layer connecting point-of-sale, reservations, digital ordering, and workforce management. Four systems unified into one operational view.",
+      "Unified operations layer connecting POS, reservations, digital ordering, and workforce management into a single view.",
     stats: [
-      { value: "4", label: "systems integrated" },
-      { value: "2-week", label: "live in 2 weeks" },
+      { value: "4", label: "systems unified" },
+      { value: "2 weeks", label: "to production" },
     ],
   },
   {
     industry: "NONPROFIT",
-    name: "BBC Foundation",
+    name: "Prospect Intelligence",
     client: "BBC Foundation",
     description:
-      "Prospect intelligence platform with automated scoring, capacity modelling, and strategic segmentation across 1,169 donor records.",
+      "Automated donor scoring, capacity modelling, and strategic segmentation across the full prospect database.",
     stats: [
-      { value: "1,169", label: "records" },
+      { value: "1,169", label: "records processed" },
       { value: "$429M", label: "capacity mapped" },
     ],
   },
@@ -73,13 +73,13 @@ export function CaseStudies() {
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground-muted">
                     {study.description}
                   </p>
-                  <div className="mt-6 flex gap-8 border-t border-[rgba(255,255,255,0.06)] pt-6">
+                  <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[rgba(255,255,255,0.06)] pt-6">
                     {study.stats.map((stat) => (
                       <div key={stat.label}>
-                        <p className="font-heading text-2xl font-bold text-white">
+                        <p className="whitespace-nowrap font-heading text-2xl font-bold text-white">
                           {stat.value}
                         </p>
-                        <p className="mt-1 text-xs text-foreground-muted">
+                        <p className="mt-1 whitespace-nowrap text-xs text-foreground-muted">
                           {stat.label}
                         </p>
                       </div>
