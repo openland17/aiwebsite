@@ -3,9 +3,10 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "How We Work", href: "#how-we-work" },
   { label: "OpenClaw", href: "#openclaw" },
+  { label: "Solutions", href: "#solutions" },
+  { label: "Case Studies", href: "#case-studies" },
+  { label: "Process", href: "#how-we-work" },
   { label: "Contact", href: "#contact" },
 ] as const;
 

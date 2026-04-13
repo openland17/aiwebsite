@@ -51,14 +51,14 @@ export function Hero() {
         >
           <AnimatedGradientText>
             <span className="font-mono text-xs uppercase tracking-[0.2em]">
-              Operational Intelligence &middot; Brisbane
+              OpenClaw Setup as a Service
             </span>
           </AnimatedGradientText>
         </motion.div>
 
         <h1 className="mx-auto mt-8 max-w-4xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
           <BlurText
-            text="We build the systems your business runs on."
+            text="AI that runs on your network. Installed in days."
             delay={80}
             animateBy="words"
             direction="top"
@@ -72,9 +72,9 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
           className="mx-auto mt-6 max-w-2xl text-base text-foreground-muted sm:text-lg"
         >
-          Custom operational software, AI-powered intelligence, and
-          production-grade tools. Delivered in weeks, not months. For
-          construction, property, and hospitality.
+          A dedicated AI system on your hardware. No cloud dependency,
+          no per-seat licensing, no recurring costs. We source the machine,
+          install everything, and train your team.
         </motion.p>
 
         <motion.div
@@ -92,18 +92,18 @@ export function Hero() {
             Book a Discovery Call
           </a>
           <Link
-            href="#case-studies"
-            onClick={scrollTo("#case-studies")}
+            href="#openclaw"
+            onClick={scrollTo("#openclaw")}
             className="w-full rounded-lg border border-white/15 bg-white/[0.02] px-8 py-3.5 text-center text-sm font-medium text-white/70 backdrop-blur-sm transition-all duration-200 hover:border-white/30 hover:text-white sm:w-auto"
           >
-            See Case Studies &darr;
+            Learn More
           </Link>
         </motion.div>
       </div>
 
       <motion.a
-        href="#case-studies"
-        onClick={scrollTo("#case-studies")}
+        href="#openclaw"
+        onClick={scrollTo("#openclaw")}
         aria-label="Scroll down"
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-full"
         initial={{ opacity: 0 }}

@@ -1,29 +1,40 @@
 "use client";
 
-import { Cpu, Brain, Wrench, DollarSign } from "lucide-react";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
-const FEATURES = [
+const BENTO_CARDS = [
   {
-    icon: Cpu,
     title: "Dedicated Mac Mini",
-    description: "32GB RAM, always-on, runs on your network",
+    description:
+      "Apple M4, 32GB RAM, 512GB SSD. Always on, always available. Sits on your network, runs your AI workloads without touching the cloud.",
+    span: 2,
+    hasGrid: true,
+    isPrice: false,
   },
   {
-    icon: Brain,
-    title: "Local AI Models",
-    description: "Qwen, Llama, or Claude API fallback. Your choice",
+    title: "Your choice of AI models",
+    description:
+      "Qwen, Llama, DeepSeek, or Claude API fallback. Models run locally on the hardware. Your data never leaves your premises.",
+    span: 1,
+    hasGrid: false,
+    isPrice: false,
   },
   {
-    icon: Wrench,
-    title: "Installed & Configured",
-    description: "We source the hardware, install everything, train your team",
+    title: "Installed and configured",
+    description:
+      "We source the hardware, install the OS and models, configure Docker sandboxing, set up Telegram or Slack integration, and train your team.",
+    span: 1,
+    hasGrid: false,
+    isPrice: false,
   },
   {
-    icon: DollarSign,
-    title: "Flat Package Price",
-    description: "$8,000 to $10,000 all-in",
+    title: "$8,000 to $10,000",
+    description:
+      "Hardware, software, installation, configuration, and training. All-in. No monthly fees, no per-seat charges, no surprise invoices.",
+    span: 2,
+    hasGrid: false,
+    isPrice: true,
   },
 ] as const;
 
@@ -33,58 +44,65 @@ export function OpenClaw() {
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
-            Product
+            The Product
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
             OpenClaw. AI on your hardware.
           </h2>
           <p className="mt-4 max-w-2xl text-foreground-muted">
-            A dedicated AI system running 24/7 on your local network. No cloud
-            dependency. No per-seat fees. Your data stays yours.
+            A turnkey AI deployment. We source a dedicated Mac Mini, install
+            local AI models, configure it for your workflows, and train your
+            team. Runs 24/7 on your network.
           </p>
         </BlurFade>
 
-        <BlurFade inView delay={0.15} inViewMargin="-50px">
-          <div className="relative mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-8 md:p-12">
-            <FlickeringGrid
-              className="absolute inset-0 z-0"
-              squareSize={4}
-              gridGap={6}
-              color="#3b82f6"
-              maxOpacity={0.15}
-              flickerChance={0.02}
-            />
-            <div className="relative z-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
-              {FEATURES.map((feature) => {
-                const Icon = feature.icon;
-                return (
-                  <div key={feature.title} className="flex gap-4">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)]">
-                      <Icon className="h-5 w-5 text-accent" aria-hidden />
-                    </div>
-                    <div>
-                      <h3 className="font-heading font-bold text-white">
-                        {feature.title}
-                      </h3>
-                      <p className="mt-1 text-sm text-foreground-muted">
-                        {feature.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+        <div className="mt-16 grid grid-cols-1 gap-4 md:grid-cols-3">
+          {BENTO_CARDS.map((card, i) => (
+            <BlurFade
+              key={card.title}
+              inView
+              delay={i * 0.08}
+              inViewMargin="-50px"
+              className={card.span === 2 ? "md:col-span-2" : ""}
+            >
+              <div className="relative h-full overflow-hidden rounded-xl border border-white/[0.06] bg-[rgba(255,255,255,0.02)] p-8 transition-colors duration-300 hover:border-white/[0.12]">
+                {card.hasGrid && (
+                  <FlickeringGrid
+                    className="absolute inset-0 z-0"
+                    squareSize={4}
+                    gridGap={6}
+                    color="#3b82f6"
+                    maxOpacity={0.12}
+                    flickerChance={0.02}
+                  />
+                )}
+                <div className="relative z-10">
+                  <h3
+                    className={`font-heading font-bold text-white ${
+                      card.isPrice ? "text-3xl sm:text-4xl" : "text-lg"
+                    }`}
+                  >
+                    {card.title}
+                  </h3>
+                  <p className="mt-3 max-w-lg text-sm leading-relaxed text-foreground-muted">
+                    {card.description}
+                  </p>
+                </div>
+              </div>
+            </BlurFade>
+          ))}
+        </div>
 
-            <div className="relative z-10 mt-10">
-              <a
-                href="https://calendly.com/mjs-consulting/ai-demo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-white px-8 py-3.5 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              >
-                Book a Call to Learn More
-              </a>
-            </div>
+        <BlurFade inView delay={0.4} inViewMargin="-50px">
+          <div className="mt-10 text-center">
+            <a
+              href="https://calendly.com/mjs-consulting/ai-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded-lg bg-white px-8 py-3.5 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            >
+              Book a Call
+            </a>
           </div>
         </BlurFade>
       </div>
