@@ -35,7 +35,7 @@ export function BorderBeam({
       }
       className={cn(
         "pointer-events-none absolute inset-0 rounded-[inherit] [border:calc(var(--border-width)*1px)_solid_transparent]",
-        "[background:linear-gradient(white,white)_padding-box,linear-gradient(var(--angle),transparent_20%,var(--color-from),var(--color-to),transparent_80%)_border-box]",
+        "[background:linear-gradient(transparent,transparent)_padding-box,linear-gradient(var(--angle),transparent_20%,var(--color-from),var(--color-to),transparent_80%)_border-box]",
         "[animation:border-beam-rotate_calc(var(--duration)*1s)_linear_infinite]",
         "[animation-delay:var(--delay)]",
         className

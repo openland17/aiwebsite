@@ -9,7 +9,7 @@ const CASE_STUDIES = [
     name: "PARC Finishes",
     client: "Engage Group",
     description:
-      "Purpose-built finish scheduling and tracking system for large-scale construction projects. Replaced a multi-spreadsheet workflow that was costing the team hours per week in manual reconciliation.",
+      "Finish scheduling and tracking system for a multi-unit residential development. Real-time visibility across finishes, trades, and project milestones \u2014 replacing disconnected manual processes with a single production tool.",
     stats: [
       { value: "3", label: "tools shipped" },
       { value: "2-week", label: "delivery" },
@@ -20,10 +20,10 @@ const CASE_STUDIES = [
     name: "Rise Bakery",
     client: "Rise Bakery",
     description:
-      "Integrated operations platform connecting point-of-sale, booking, ordering, and workforce systems. Built to unify Lightspeed, SevenRooms, me&u, and Tanda into a single operational view.",
+      "Integrated operations layer connecting point-of-sale, reservations, digital ordering, and workforce management. Four systems unified into one operational view.",
     stats: [
-      { value: "4", label: "integrations" },
-      { value: "1st", label: "paying client" },
+      { value: "4", label: "systems integrated" },
+      { value: "2-week", label: "live in 2 weeks" },
     ],
   },
   {
@@ -31,10 +31,10 @@ const CASE_STUDIES = [
     name: "BBC Foundation",
     client: "BBC Foundation",
     description:
-      "Donor intelligence system processing 1,169 prospect records with automated scoring, capacity analysis, and strategic segmentation. Delivered as a production-ready dashboard with $429M in identified giving capacity.",
+      "Prospect intelligence platform with automated scoring, capacity modelling, and strategic segmentation across 1,169 donor records.",
     stats: [
-      { value: "1,169", label: "prospects" },
-      { value: "$429M", label: "identified" },
+      { value: "1,169", label: "records" },
+      { value: "$429M", label: "capacity mapped" },
     ],
   },
 ] as const;
