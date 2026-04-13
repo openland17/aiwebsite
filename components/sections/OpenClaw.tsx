@@ -2,7 +2,6 @@
 
 import { Cpu, Brain, Wrench, DollarSign } from "lucide-react";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import { BorderBeam } from "@/components/magicui/border-beam";
 
 const FEATURES = [
   {
@@ -45,13 +44,7 @@ export function OpenClaw() {
         </BlurFade>
 
         <BlurFade inView delay={0.15} inViewMargin="-50px">
-          <div className="relative mt-16 overflow-hidden rounded-2xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)] p-8 md:p-12">
-            <BorderBeam
-              colorFrom="#3b82f6"
-              colorTo="#1d4ed8"
-              size={200}
-              duration={12}
-            />
+          <div className="mt-16 rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-8 md:p-12">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
               {FEATURES.map((feature) => {
                 const Icon = feature.icon;
