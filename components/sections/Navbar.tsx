@@ -63,7 +63,7 @@ export function Navbar() {
             href="https://calendly.com/mjs-consulting/ai-demo"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
           >
             Book a Call
           </a>
@@ -131,7 +131,7 @@ export function Navbar() {
                   href="https://calendly.com/mjs-consulting/ai-demo"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 w-full rounded-lg bg-accent px-4 py-3 text-center text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="mt-4 w-full rounded-lg bg-white px-4 py-3 text-center text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
                   onClick={() => setMobileOpen(false)}
                 >
                   Book a Call

@@ -26,7 +26,7 @@ export function Contact() {
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-foreground-muted">
               Book a 20-minute call. We&apos;ll map your biggest operational
-              bottlenecks and give you a clear plan — whether you work with us or
+              bottlenecks and give you a clear plan, whether you work with us or
               not.
             </p>
           </div>

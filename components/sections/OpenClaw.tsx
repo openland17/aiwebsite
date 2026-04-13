@@ -13,7 +13,7 @@ const FEATURES = [
   {
     icon: Brain,
     title: "Local AI Models",
-    description: "Qwen, Llama, or Claude API fallback — your choice",
+    description: "Qwen, Llama, or Claude API fallback. Your choice",
   },
   {
     icon: Wrench,
@@ -23,7 +23,7 @@ const FEATURES = [
   {
     icon: DollarSign,
     title: "Flat Package Price",
-    description: "$8,000 – $10,000 all-in",
+    description: "$8,000 to $10,000 all-in",
   },
 ] as const;
 
@@ -36,7 +36,7 @@ export function OpenClaw() {
             Product
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            OpenClaw — AI on your hardware.
+            OpenClaw. AI on your hardware.
           </h2>
           <p className="mt-4 max-w-2xl text-foreground-muted">
             A dedicated AI system running 24/7 on your local network. No cloud
@@ -78,7 +78,7 @@ export function OpenClaw() {
                 href="https://calendly.com/mjs-consulting/ai-demo"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block rounded-lg bg-accent px-6 py-3 text-sm font-medium text-white transition hover:bg-accent/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                className="inline-block rounded-lg bg-white px-8 py-3.5 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 Book a Call to Learn More
               </a>

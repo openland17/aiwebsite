@@ -7,7 +7,6 @@ import { ChevronDown } from "lucide-react";
 import BlurText from "@/components/ui/BlurText";
 import Particles from "@/components/reactbits/Particles";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
-import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 const Globe = dynamic(() => import("@/components/ui/Globe"), { ssr: false });
 
@@ -37,7 +36,7 @@ export function Hero() {
         className="opacity-30"
       />
 
-      {/* Globe — right-aligned on desktop, hidden on mobile */}
+      {/* Globe: right-aligned on desktop, hidden on mobile */}
       <div className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-[15%] md:block">
         <div className="h-[700px] w-[700px] opacity-40">
           <Globe />
@@ -74,7 +73,7 @@ export function Hero() {
           className="mx-auto mt-6 max-w-2xl text-base text-foreground-muted sm:text-lg"
         >
           Custom operational software, AI-powered intelligence, and
-          production-grade tools — delivered in weeks, not months. For
+          production-grade tools. Delivered in weeks, not months. For
           construction, property, and hospitality.
         </motion.p>
 
@@ -88,20 +87,14 @@ export function Hero() {
             href="https://calendly.com/mjs-consulting/ai-demo"
             target="_blank"
             rel="noopener noreferrer"
+            className="w-full rounded-lg bg-white px-8 py-3.5 text-center text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 sm:w-auto"
           >
-            <ShimmerButton
-              shimmerColor="#ffffff"
-              background="rgba(59, 130, 246, 1)"
-              borderRadius="12px"
-              className="w-full px-8 py-4 text-base sm:w-auto"
-            >
-              Book a Discovery Call
-            </ShimmerButton>
+            Book a Discovery Call
           </a>
           <Link
             href="#case-studies"
             onClick={scrollTo("#case-studies")}
-            className="w-full rounded-xl border border-white/10 px-6 py-3 text-center font-medium text-white/70 transition-all hover:border-white/20 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black sm:w-auto"
+            className="w-full rounded-lg border border-white/15 bg-white/[0.02] px-8 py-3.5 text-center text-sm font-medium text-white/70 backdrop-blur-sm transition-all duration-200 hover:border-white/30 hover:text-white sm:w-auto"
           >
             See Case Studies &darr;
           </Link>

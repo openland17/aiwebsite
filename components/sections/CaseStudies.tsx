@@ -51,7 +51,7 @@ export function CaseStudies() {
             Real systems. Real results.
           </h2>
           <p className="mt-4 max-w-xl text-foreground-muted">
-            Production tools built for real operations — not demos, not proofs of
+            Production tools built for real operations. Not demos, not proofs of
             concept.
           </p>
         </BlurFade>

@@ -16,14 +16,14 @@ const STEPS = [
     icon: PenTool,
     title: "Design",
     description:
-      "We map the solution architecture. You see exactly what we\u2019re building before we write a line of code.",
+      "We map the solution architecture. You see exactly what we're building before we write a line of code.",
   },
   {
     step: 3,
     icon: Code,
     title: "Build",
     description:
-      "Custom-built, tested end to end. Typically live within 1\u20132 weeks.",
+      "Custom-built, tested end to end. Typically live within 1 to 2 weeks.",
   },
   {
     step: 4,
