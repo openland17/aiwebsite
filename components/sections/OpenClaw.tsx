@@ -2,6 +2,7 @@
 
 import { Cpu, Brain, Wrench, DollarSign } from "lucide-react";
 import { BlurFade } from "@/components/magicui/blur-fade";
+import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 
 const FEATURES = [
   {
@@ -44,8 +45,16 @@ export function OpenClaw() {
         </BlurFade>
 
         <BlurFade inView delay={0.15} inViewMargin="-50px">
-          <div className="mt-16 rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-8 md:p-12">
-            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
+          <div className="relative mt-16 overflow-hidden rounded-2xl border border-white/10 bg-[rgba(255,255,255,0.02)] p-8 md:p-12">
+            <FlickeringGrid
+              className="absolute inset-0 z-0"
+              squareSize={4}
+              gridGap={6}
+              color="#3b82f6"
+              maxOpacity={0.15}
+              flickerChance={0.02}
+            />
+            <div className="relative z-10 grid grid-cols-1 gap-8 sm:grid-cols-2">
               {FEATURES.map((feature) => {
                 const Icon = feature.icon;
                 return (
@@ -66,7 +75,7 @@ export function OpenClaw() {
               })}
             </div>
 
-            <div className="mt-10">
+            <div className="relative z-10 mt-10">
               <a
                 href="https://calendly.com/mjs-consulting/ai-demo"
                 target="_blank"
