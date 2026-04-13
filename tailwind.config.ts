@@ -9,17 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FFFFFF",
-        foreground: "#1F2937",
-        accent: "#2563EB",
-        "accent-dark": "#1B2A4A",
-        muted: "#6B7280",
-        light: "#F8FAFC",
-        "section-dark": "#1B2A4A",
-        "border-subtle": "rgba(31, 41, 55, 0.1)",
+        background: "#000000",
+        "background-secondary": "#0a0a0a",
+        "background-tertiary": "#111111",
+        foreground: "#e5e7eb",
+        "foreground-muted": "#6b7280",
+        "foreground-dim": "#374151",
+        accent: "#3b82f6",
+        "accent-glow": "rgba(59, 130, 246, 0.15)",
+        border: "rgba(255, 255, 255, 0.06)",
+        "border-hover": "rgba(255, 255, 255, 0.12)",
+        "card-bg": "rgba(255, 255, 255, 0.02)",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
+        heading: ["var(--font-outfit)", "system-ui", "sans-serif"],
+        mono: ["var(--font-ibm-plex-mono)", "monospace"],
       },
       animation: {
         "fade-in": "fade-in 0.5s ease-out forwards",

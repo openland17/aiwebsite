@@ -3,10 +3,9 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "What We Do", href: "#what-we-do" },
-  { label: "Industries", href: "#industries" },
+  { label: "Case Studies", href: "#case-studies" },
   { label: "How We Work", href: "#how-we-work" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "OpenClaw", href: "#openclaw" },
   { label: "Contact", href: "#contact" },
 ] as const;
 

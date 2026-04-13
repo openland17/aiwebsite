@@ -1,36 +1,49 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans, Outfit, IBM_Plex_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
+  weight: ["400", "500"],
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+  weight: ["600", "700"],
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  variable: "--font-ibm-plex-mono",
+  weight: ["400", "500"],
 });
 
 const SITE_URL = "https://mjs-consulting.com.au";
 
 export const metadata: Metadata = {
-  title: "MJS Consulting — AI Automation for Business",
+  title: "MJS Consulting — Operational Intelligence Systems",
   description:
-    "Custom AI tools and automation for construction, hospitality, and professional services. Based in Brisbane.",
+    "Custom operational software and AI-powered tools for construction, property, and hospitality. Production-grade systems delivered in weeks. Brisbane, Australia.",
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "MJS Consulting — AI Automation for Business",
+    title: "MJS Consulting — Operational Intelligence Systems",
     description:
-      "Custom AI tools and automation for construction, hospitality, and professional services. Based in Brisbane.",
+      "Custom operational software and AI-powered tools for construction, property, and hospitality. Production-grade systems delivered in weeks. Brisbane, Australia.",
     url: SITE_URL,
     siteName: "MJS Consulting",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MJS Consulting — AI Automation for Business",
+    title: "MJS Consulting — Operational Intelligence Systems",
     description:
-      "Custom AI tools and automation for construction, hospitality, and professional services. Based in Brisbane.",
+      "Custom operational software and AI-powered tools for construction, property, and hospitality. Production-grade systems delivered in weeks. Brisbane, Australia.",
   },
 };
 
@@ -40,8 +53,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className={`${inter.className} antialiased`}>
+    <html
+      lang="en"
+      className={`${dmSans.variable} ${outfit.variable} ${ibmPlexMono.variable}`}
+    >
+      <body className={`${dmSans.className} antialiased`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KC8HYD938V"
           strategy="afterInteractive"

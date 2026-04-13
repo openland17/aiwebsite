@@ -3,13 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #1f2937;
-  --muted: #6b7280;
-  --accent: #2563eb;
-  --accent-dark: #1b2a4a;
-  --section-light: #f8fafc;
-  --border-subtle: rgba(31, 41, 55, 0.1);
+  --background: #000000;
+  --background-secondary: #0a0a0a;
+  --background-tertiary: #111111;
+  --foreground: #e5e7eb;
+  --foreground-muted: #6b7280;
+  --foreground-dim: #374151;
+  --accent: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.15);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
+  --card-bg: rgba(255, 255, 255, 0.02);
 }
 
 html {
@@ -30,22 +34,22 @@ button:focus-visible {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--section-light);
+  background: #0a0a0a;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(31, 41, 55, 0.2);
-  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(31, 41, 55, 0.35);
+  background: rgba(255, 255, 255, 0.2);
 }
 * {
   scrollbar-width: thin;
-  scrollbar-color: rgba(31, 41, 55, 0.2) var(--section-light);
+  scrollbar-color: rgba(255, 255, 255, 0.1) #0a0a0a;
 }
 
 @layer utilities {

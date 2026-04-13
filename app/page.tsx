@@ -1,13 +1,9 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { SocialProof } from "@/components/sections/SocialProof";
-import { WhatWeDo } from "@/components/sections/WhatWeDo";
-import { Industries } from "@/components/sections/Industries";
+import { CaseStudies } from "@/components/sections/CaseStudies";
 import { HowWeWork } from "@/components/sections/HowWeWork";
-import { Results } from "@/components/sections/Results";
-import { Pricing } from "@/components/sections/Pricing";
-import { BookCall } from "@/components/sections/BookCall";
-import { FinalCTA } from "@/components/sections/FinalCTA";
+import { OpenClaw } from "@/components/sections/OpenClaw";
+import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -16,14 +12,10 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <SocialProof />
-        <WhatWeDo />
-        <Industries />
+        <CaseStudies />
         <HowWeWork />
-        <Results />
-        <Pricing />
-        <BookCall />
-        <FinalCTA />
+        <OpenClaw />
+        <Contact />
       </main>
       <Footer />
     </>
