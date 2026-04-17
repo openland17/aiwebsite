@@ -1,8 +1,9 @@
 "use client";
 
-import { CONTACT, AUDIT_URL } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import Aurora from "@/components/reactbits/Aurora";
+import { TallyEmbed } from "@/components/TallyEmbed";
 
 export function Contact() {
   return (
@@ -31,15 +32,8 @@ export function Contact() {
             would take, and what to ignore. No pitch at the end.
           </p>
 
-          <div className="mt-10 flex justify-center">
-            <a
-              href={AUDIT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-white px-10 py-4 text-base font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              Book Your Audit
-            </a>
+          <div className="mx-auto mt-10 max-w-xl text-left">
+            <TallyEmbed />
           </div>
 
           <p className="mt-6 text-sm text-foreground-muted">
