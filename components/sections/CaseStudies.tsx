@@ -45,14 +45,14 @@ export function CaseStudies() {
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
-            Case Studies
+            Work
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            Real systems. Real results.
+            Real systems. Real operations.
           </h2>
           <p className="mt-4 max-w-xl text-foreground-muted">
-            Production tools built for real operations. Not demos, not proofs of
-            concept.
+            Production tools shipped to real businesses. Not demos, not proofs
+            of concept.
           </p>
         </BlurFade>
 
