@@ -23,7 +23,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 const SITE_URL = "https://mjs-consulting.com.au";
 const SITE_TITLE =
-  "MJS Consulting — Custom Software for Operations-Heavy Businesses";
+  "MJS Consulting. Custom Software for Operations-Heavy Businesses.";
 const SITE_DESCRIPTION =
   "Custom operational software for construction, property, and hospitality businesses. Shipped in 1 to 2 weeks. Brisbane-based, working with businesses across Australia.";
 

@@ -6,10 +6,10 @@ import { MagicCard } from "@/components/magicui/magic-card";
 const CASE_STUDIES = [
   {
     industry: "CONSTRUCTION",
-    name: "PARC Finishes",
-    client: "Engage Group",
+    name: "Finishes Management Platform",
+    client: "Brisbane property developer",
     description:
-      "Finish schedule management and tracking for a multi-unit residential development. Real-time visibility across finishes, trades, and project milestones.",
+      "Replaced an unmanageable finishes spreadsheet for a multi-unit luxury residential build. Custom selection tool with real-time pricing, per-unit tracking, and supplier-ready output.",
     stats: [
       { value: "3", label: "tools shipped" },
       { value: "2 weeks", label: "to production" },
@@ -18,9 +18,9 @@ const CASE_STUDIES = [
   {
     industry: "HOSPITALITY",
     name: "Operations Platform",
-    client: "Rise Bakery",
+    client: "Brisbane hospitality group",
     description:
-      "Unified operations layer connecting POS, reservations, digital ordering, and workforce management into a single view.",
+      "Connected four disconnected systems into a single operational view. POS, reservations, ordering, and rostering on one screen instead of four logins.",
     stats: [
       { value: "4", label: "systems unified" },
       { value: "2 weeks", label: "to production" },
@@ -29,12 +29,12 @@ const CASE_STUDIES = [
   {
     industry: "NONPROFIT",
     name: "Prospect Intelligence",
-    client: "BBC Foundation",
+    client: "Major Australian educational foundation",
     description:
-      "Automated donor scoring, capacity modelling, and strategic segmentation across the full prospect database.",
+      "Built a queryable donor intelligence database that scored a four-figure prospect list on a 0 to 100 capacity model. Replaced months of manual research with a single dashboard.",
     stats: [
-      { value: "1,169", label: "records processed" },
-      { value: "$429M", label: "capacity mapped" },
+      { value: "1,000+", label: "records processed" },
+      { value: "Months to minutes", label: "research time" },
     ],
   },
 ] as const;
@@ -76,10 +76,10 @@ export function CaseStudies() {
                   <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[rgba(255,255,255,0.06)] pt-6">
                     {study.stats.map((stat) => (
                       <div key={stat.label}>
-                        <p className="whitespace-nowrap font-heading text-2xl font-bold text-white">
+                        <p className="font-heading text-2xl font-bold text-white">
                           {stat.value}
                         </p>
-                        <p className="mt-1 whitespace-nowrap text-xs text-foreground-muted">
+                        <p className="mt-1 text-xs text-foreground-muted">
                           {stat.label}
                         </p>
                       </div>

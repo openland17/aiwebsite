@@ -2,11 +2,11 @@
 
 import { BlurFade } from "@/components/magicui/blur-fade";
 
-const CLIENTS = [
-  "Engage Group",
-  "Rise Bakery",
-  "BBC Foundation",
-  "Pacific Motor Group",
+const VERTICALS = [
+  "Construction",
+  "Property",
+  "Hospitality",
+  "Professional Services",
 ] as const;
 
 export function TrustStrip() {
@@ -15,13 +15,13 @@ export function TrustStrip() {
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-80px">
           <p className="text-center font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
-            Trusted by
+            Working with
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-foreground-muted sm:text-base">
-            {CLIENTS.map((name, i) => (
+            {VERTICALS.map((name, i) => (
               <span key={name} className="flex items-center gap-x-3">
                 <span>{name}</span>
-                {i < CLIENTS.length - 1 && (
+                {i < VERTICALS.length - 1 && (
                   <span aria-hidden className="text-foreground-dim">
                     ·
                   </span>

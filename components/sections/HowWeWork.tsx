@@ -9,28 +9,28 @@ const STEPS = [
     icon: Search,
     title: "Discovery",
     description:
-      "We learn how your business actually operates. The manual processes, the spreadsheets, the pain points.",
+      "We sit down with you and learn how your business actually runs. The real workflows, not the org chart.",
   },
   {
     step: 2,
     icon: PenTool,
     title: "Design",
     description:
-      "We map the solution architecture. You see exactly what we're building before we write a line of code.",
+      "We map exactly what we're building before any code is written. You sign off on the scope.",
   },
   {
     step: 3,
     icon: Code,
     title: "Build",
     description:
-      "Custom-built, tested end to end. Typically live within 1 to 2 weeks.",
+      "Working software in your hands inside 1 to 2 weeks. Tested end to end.",
   },
   {
     step: 4,
     icon: LifeBuoy,
     title: "Support",
     description:
-      "Ongoing refinement. Your business changes, your tools evolve with it.",
+      "Ongoing refinement as your business changes. Monthly retainer or pay-as-you-go.",
   },
 ] as const;
 

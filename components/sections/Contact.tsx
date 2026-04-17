@@ -45,7 +45,7 @@ export function Contact() {
           <p className="mt-6 text-sm text-foreground-muted">
             <a
               href={`mailto:${CONTACT.email}`}
-              className="transition hover:text-white"
+              className="rounded transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               {CONTACT.email}
             </a>
@@ -54,7 +54,7 @@ export function Contact() {
             </span>
             <a
               href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
-              className="transition hover:text-white"
+              className="rounded transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               {CONTACT.phone}
             </a>

@@ -11,7 +11,7 @@ const CARDS = [
   {
     title: "Workflow automation",
     description:
-      "Manual data entry, reconciliation, reporting — replaced with systems that run themselves. Your team gets hours of their week back.",
+      "Manual data entry, reconciliation, reporting. Replaced with systems that run themselves. Your team gets hours of their week back.",
   },
   {
     title: "AI-powered intelligence",
