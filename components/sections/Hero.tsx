@@ -27,7 +27,7 @@ export function Hero() {
           initial={fadeUp.initial}
           animate={fadeUp.animate}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-muted"
+          className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-muted"
         >
           Custom operational software
         </motion.p>

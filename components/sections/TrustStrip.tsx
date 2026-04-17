@@ -14,7 +14,7 @@ export function TrustStrip() {
     <section className="bg-black py-16 md:py-20">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-80px">
-          <p className="text-center font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
+          <p className="text-center font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
             Working with
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm text-foreground-muted sm:text-base">

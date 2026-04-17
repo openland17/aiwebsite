@@ -25,7 +25,7 @@ export function CustomSolutions() {
     <section id="what-we-build" className="bg-black py-24 md:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
             Capabilities
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">

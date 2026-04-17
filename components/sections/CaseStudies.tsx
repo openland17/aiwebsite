@@ -44,7 +44,7 @@ export function CaseStudies() {
     <section id="case-studies" className="bg-black py-24 md:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
             Work
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
@@ -61,7 +61,7 @@ export function CaseStudies() {
             <BlurFade key={study.name} inView delay={i * 0.1} inViewMargin="-50px">
               <MagicCard className="h-full">
                 <div className="flex h-full flex-col p-8">
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent">
                     {study.industry}
                   </p>
                   <h3 className="mt-3 font-heading text-xl font-bold text-white">
