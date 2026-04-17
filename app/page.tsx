@@ -4,6 +4,7 @@ import { TrustStrip } from "@/components/sections/TrustStrip";
 import { Problem } from "@/components/sections/Problem";
 import { CustomSolutions } from "@/components/sections/CustomSolutions";
 import { CaseStudies } from "@/components/sections/CaseStudies";
+import { Testimonial } from "@/components/sections/Testimonial";
 import { Engagement } from "@/components/sections/Engagement";
 import { HowWeWork } from "@/components/sections/HowWeWork";
 import { About } from "@/components/sections/About";
@@ -20,6 +21,7 @@ export default function Home() {
         <Problem />
         <CustomSolutions />
         <CaseStudies />
+        <Testimonial />
         <Engagement />
         <HowWeWork />
         <About />
