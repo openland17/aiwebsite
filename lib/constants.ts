@@ -9,9 +9,7 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ] as const;
 
-// TODO: replace this with a dedicated "Free Operations Audit" event type
-// once the Calendly event is created.
-export const AUDIT_URL = "https://calendly.com/mjs-consulting/ai-demo";
+export const AUDIT_URL = "https://calendly.com/mjs-consulting/audit";
 
 export const CONTACT = {
   email: "mattsmith.info@gmail.com",
