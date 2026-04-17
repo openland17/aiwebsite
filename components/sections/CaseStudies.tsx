@@ -6,10 +6,10 @@ import { MagicCard } from "@/components/magicui/magic-card";
 const CASE_STUDIES = [
   {
     industry: "CONSTRUCTION",
-    name: "PARC Finishes",
-    client: "Engage Group",
+    name: "Finishes Management Platform",
+    client: "Brisbane property developer",
     description:
-      "Finish schedule management and tracking for a multi-unit residential development. Real-time visibility across finishes, trades, and project milestones.",
+      "Replaced an unmanageable finishes spreadsheet for a multi-unit luxury residential build. Custom selection tool with real-time pricing, per-unit tracking, and supplier-ready output.",
     stats: [
       { value: "3", label: "tools shipped" },
       { value: "2 weeks", label: "to production" },
@@ -18,9 +18,9 @@ const CASE_STUDIES = [
   {
     industry: "HOSPITALITY",
     name: "Operations Platform",
-    client: "Rise Bakery",
+    client: "Brisbane hospitality group",
     description:
-      "Unified operations layer connecting POS, reservations, digital ordering, and workforce management into a single view.",
+      "Connected four disconnected systems into a single operational view. POS, reservations, ordering, and rostering on one screen instead of four logins.",
     stats: [
       { value: "4", label: "systems unified" },
       { value: "2 weeks", label: "to production" },
@@ -29,12 +29,12 @@ const CASE_STUDIES = [
   {
     industry: "NONPROFIT",
     name: "Prospect Intelligence",
-    client: "BBC Foundation",
+    client: "Major Australian educational foundation",
     description:
-      "Automated donor scoring, capacity modelling, and strategic segmentation across the full prospect database.",
+      "Built a queryable donor intelligence database that scored a four-figure prospect list on a 0 to 100 capacity model. Replaced months of manual research with a single dashboard.",
     stats: [
-      { value: "1,169", label: "records processed" },
-      { value: "$429M", label: "capacity mapped" },
+      { value: "1,000+", label: "records processed" },
+      { value: "Months to minutes", label: "research time" },
     ],
   },
 ] as const;
@@ -44,15 +44,15 @@ export function CaseStudies() {
     <section id="case-studies" className="bg-black py-24 md:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-foreground-dim">
-            Case Studies
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
+            Work
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            Real systems. Real results.
+            Real systems. Real operations.
           </h2>
           <p className="mt-4 max-w-xl text-foreground-muted">
-            Production tools built for real operations. Not demos, not proofs of
-            concept.
+            Production tools shipped to real businesses. Not demos, not proofs
+            of concept.
           </p>
         </BlurFade>
 
@@ -61,7 +61,7 @@ export function CaseStudies() {
             <BlurFade key={study.name} inView delay={i * 0.1} inViewMargin="-50px">
               <MagicCard className="h-full">
                 <div className="flex h-full flex-col p-8">
-                  <p className="font-mono text-xs uppercase tracking-[0.2em] text-accent">
+                  <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent">
                     {study.industry}
                   </p>
                   <h3 className="mt-3 font-heading text-xl font-bold text-white">
@@ -76,10 +76,10 @@ export function CaseStudies() {
                   <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[rgba(255,255,255,0.06)] pt-6">
                     {study.stats.map((stat) => (
                       <div key={stat.label}>
-                        <p className="whitespace-nowrap font-heading text-2xl font-bold text-white">
+                        <p className="font-heading text-2xl font-bold text-white">
                           {stat.value}
                         </p>
-                        <p className="mt-1 whitespace-nowrap text-xs text-foreground-muted">
+                        <p className="mt-1 text-xs text-foreground-muted">
                           {stat.label}
                         </p>
                       </div>

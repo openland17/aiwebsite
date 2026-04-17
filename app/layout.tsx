@@ -22,28 +22,29 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 const SITE_URL = "https://mjs-consulting.com.au";
+const SITE_TITLE =
+  "MJS Consulting: Custom Software for Operations-Heavy Businesses";
+const SITE_DESCRIPTION =
+  "Custom operational software for construction, property, and hospitality businesses. Shipped in 1 to 2 weeks. Brisbane-based, working with businesses across Australia.";
 
 export const metadata: Metadata = {
-  title: "MJS Consulting. OpenClaw: AI on Your Hardware.",
-  description:
-    "OpenClaw: a dedicated AI system installed on your hardware. No cloud dependency, no recurring fees. Plus custom operational software for construction, property, and hospitality. Brisbane.",
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
   metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "MJS Consulting. OpenClaw: AI on Your Hardware.",
-    description:
-      "OpenClaw: a dedicated AI system installed on your hardware. No cloud dependency, no recurring fees. Plus custom operational software for construction, property, and hospitality. Brisbane.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
     url: SITE_URL,
     siteName: "MJS Consulting",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "MJS Consulting. OpenClaw: AI on Your Hardware.",
-    description:
-      "OpenClaw: a dedicated AI system installed on your hardware. No cloud dependency, no recurring fees. Plus custom operational software for construction, property, and hospitality. Brisbane.",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
   },
 };
 
