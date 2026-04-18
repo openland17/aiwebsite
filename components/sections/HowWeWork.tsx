@@ -40,10 +40,10 @@ export function HowWeWork() {
       <div className="mx-auto max-w-7xl px-6 text-center">
         <BlurFade inView inViewMargin="-100px">
           <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
-            Process
+            How it works.
           </p>
           <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            From discovery to production.
+            Fixed scope. Fixed timeline. Working software in 7 days.
           </h2>
         </BlurFade>
 
