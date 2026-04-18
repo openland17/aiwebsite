@@ -3,9 +3,9 @@
 import { BlurFade } from "@/components/magicui/blur-fade";
 
 const VERTICALS = [
+  "Hospitality",
   "Construction",
   "Property",
-  "Hospitality",
   "Professional Services",
 ] as const;
 

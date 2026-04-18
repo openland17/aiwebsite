@@ -9,7 +9,7 @@ export const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ] as const;
 
-export const AUDIT_URL = "https://calendly.com/mjs-consulting/audit";
+export const AUDIT_URL = "https://tally.so/r/D4v12E";
 
 export const CONTACT = {
   email: "mattsmith.info@gmail.com",
