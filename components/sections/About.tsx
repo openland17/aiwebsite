@@ -17,8 +17,8 @@ export function About() {
             MJS Consulting is run by Matt Smith, a Brisbane-based software
             consultant who builds operational tools for businesses across
             Australia. We focus on construction, property, and hospitality
-            because that&apos;s where we have the strongest track record, but
-            the underlying problem is the same across operations-heavy
+            because that&apos;s where we have the strongest track record. The
+            underlying problem is the same across operations-heavy
             industries. No middlemen, no offshore teams, no project managers
             between you and the person writing the code. You talk to the
             builder. The builder ships the work.

@@ -2,12 +2,6 @@
 
 import { BlurFade } from "@/components/magicui/blur-fade";
 
-const METRICS = [
-  { value: "7", label: "tabs open" },
-  { value: "4", label: "spreadsheets" },
-  { value: "\u221E", label: "hours lost" },
-] as const;
-
 export function Problem() {
   return (
     <section className="bg-black px-6 py-24 md:py-32 lg:py-40">
@@ -30,19 +24,7 @@ export function Problem() {
               Spreadsheets become load-bearing. Critical processes live in
               someone&apos;s head.
             </p>
-            <div className="mt-5 grid grid-cols-3 gap-4 border-t border-white/[0.06] pt-5">
-              {METRICS.map((m) => (
-                <div key={m.label}>
-                  <div className="font-heading text-2xl font-bold tracking-tight text-white">
-                    {m.value}
-                  </div>
-                  <div className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-foreground-dim">
-                    {m.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-            <p className="mt-5 text-[13px] text-foreground-dim">
+            <p className="mt-5 border-t border-white/[0.06] pt-5 text-[13px] text-foreground-dim">
               You know there&apos;s a better way to run this. You just
               don&apos;t have time to build it.
             </p>

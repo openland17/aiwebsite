@@ -27,7 +27,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden bg-black px-6 pb-24 pt-40"
+      className="relative flex items-start overflow-hidden bg-black px-6 pb-20 pt-24 md:pt-28"
     >
       <div
         aria-hidden

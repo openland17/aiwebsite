@@ -27,8 +27,8 @@ export function Contact() {
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
             Built for Brisbane hospitality groups running 2+ venues. 60
             minutes, on-site or over video. We walk through your current
-            operations — POS, reservations, rostering, reporting — and send
-            back a written summary of the three biggest automation
+            operations, covering POS, reservations, rostering and reporting,
+            and send back a written summary of the three biggest automation
             opportunities in your business. What to fix, what it would take,
             and what to ignore. No pitch at the end.
           </p>

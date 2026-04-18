@@ -10,14 +10,10 @@ export function Testimonial() {
           <figure className="text-center">
             <blockquote>
               <p className="font-heading text-xl font-medium leading-relaxed text-white sm:text-2xl">
-                I engaged Matt as a consultant to assess and implement a work
-                management solution. He did some discovery work (pre-meetings
-                and an on-site session) to understand our current setup and
-                priorities. His recommendation was based on organisational fit
-                and our ongoing access to support, and we have ended up with
-                Asana. He completed the initial set up and we are now working
-                through the transposed content to refine the way we categorise
-                and prioritise our workflow. Highly recommended.
+                Matt did discovery work to understand our setup and priorities,
+                recommended a solution based on organisational fit, and
+                completed the initial setup. We&apos;re now refining how we
+                categorise and prioritise our workflow. Highly recommended.
               </p>
             </blockquote>
 
