@@ -30,6 +30,7 @@ const config: Config = {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "fade-in-up": "fade-in-up 0.5s ease-out forwards",
         "fade-in-down": "fade-in-down 0.5s ease-out forwards",
+        "live-pulse": "live-pulse 1.4s ease-in-out infinite",
       },
       keyframes: {
         "fade-in": { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
@@ -40,6 +41,10 @@ const config: Config = {
         "fade-in-down": {
           "0%": { opacity: "0", transform: "translateY(-16px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "live-pulse": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.35" },
         },
       },
     },
