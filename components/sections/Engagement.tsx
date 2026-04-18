@@ -13,7 +13,7 @@ const STATEMENTS = [
     body: "You see real progress in week one, not a Gantt chart.",
   },
   {
-    title: "Most projects ship in 1 to 2 weeks.",
+    title: "Most projects ship in 7 days.",
     body:
       "Bigger builds are scoped in phases so you see value early.",
   },

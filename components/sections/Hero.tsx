@@ -48,7 +48,7 @@ export function Hero() {
           className="mt-8 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg"
         >
           We build operational tools for construction, property, and hospitality
-          businesses. Shipped in 1 to 2 weeks. Built around your process, not
+          businesses. Shipped in 7 days. Built around your process, not
           the other way around.
         </motion.p>
 

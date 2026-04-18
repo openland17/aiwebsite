@@ -12,7 +12,7 @@ const CASE_STUDIES = [
       "Replaced an unmanageable finishes spreadsheet for a multi-unit luxury residential build. Custom selection tool with real-time pricing, per-unit tracking, and supplier-ready output.",
     stats: [
       { value: "3", label: "tools shipped" },
-      { value: "2 weeks", label: "to production" },
+      { value: "7 days", label: "to production" },
     ],
   },
   {
@@ -23,7 +23,7 @@ const CASE_STUDIES = [
       "Connected four disconnected systems into a single operational view. POS, reservations, ordering, and rostering on one screen instead of four logins.",
     stats: [
       { value: "4", label: "systems unified" },
-      { value: "2 weeks", label: "to production" },
+      { value: "7 days", label: "to production" },
     ],
   },
   {
@@ -31,7 +31,7 @@ const CASE_STUDIES = [
     name: "Prospect Intelligence",
     client: "Major Australian educational foundation",
     description:
-      "Built a queryable donor intelligence database that scored a four-figure prospect list on a 0 to 100 capacity model. Replaced months of manual research with a single dashboard.",
+      "Built a queryable donor intelligence database that scored the full prospect list on a 0 to 100 capacity model. Replaced months of manual research with a single dashboard.",
     stats: [
       { value: "1,000+", label: "records processed" },
       { value: "Months to minutes", label: "research time" },

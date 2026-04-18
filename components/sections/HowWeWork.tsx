@@ -23,7 +23,7 @@ const STEPS = [
     icon: Code,
     title: "Build",
     description:
-      "Working software in your hands inside 1 to 2 weeks. Tested end to end.",
+      "Working software in your hands inside 7 days. Tested end to end.",
   },
   {
     step: 4,

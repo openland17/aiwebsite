@@ -24,13 +24,10 @@ export function Testimonial() {
             <figcaption className="mt-10">
               <cite className="not-italic">
                 <span className="block text-sm font-medium text-white">
-                  Cathy Stacey
-                </span>
-                <span className="mt-1 block text-sm text-foreground-muted">
                   Director of Development
                 </span>
-                <span className="block text-sm text-foreground-muted">
-                  Brisbane Boys&apos; College
+                <span className="mt-1 block text-sm text-foreground-muted">
+                  Major Australian educational foundation
                 </span>
               </cite>
               <p className="mt-3 text-xs text-foreground-dim">January 2026</p>
