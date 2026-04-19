@@ -12,6 +12,6 @@ export const NAV_LINKS = [
 export const AUDIT_URL = "https://calendly.com/mjs-consulting/audit";
 
 export const CONTACT = {
-  email: "mattsmith.info@gmail.com",
+  email: "matt@mjs-consulting.com.au",
   phone: "+61 407 733 940",
 } as const;
