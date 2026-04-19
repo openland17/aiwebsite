@@ -41,18 +41,17 @@ const CASE_STUDIES = [
 
 export function CaseStudies() {
   return (
-    <section id="case-studies" className="bg-black py-24 md:py-32 lg:py-40">
+    <section id="case-studies" className="bg-white py-24 md:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6">
         <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-neutral-500">
             Work
           </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-neutral-900 sm:text-4xl">
             Real systems. Real operations.
           </h2>
-          <p className="mt-4 max-w-xl text-foreground-muted">
-            Production tools shipped to real businesses. Not demos, not proofs
-            of concept.
+          <p className="mt-4 max-w-xl text-neutral-600">
+            Production tools shipped to real businesses.
           </p>
         </BlurFade>
 
@@ -64,22 +63,22 @@ export function CaseStudies() {
                   <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent">
                     {study.industry}
                   </p>
-                  <h3 className="mt-3 font-heading text-xl font-bold text-white">
+                  <h3 className="mt-3 font-heading text-xl font-bold text-neutral-900">
                     {study.name}
                   </h3>
-                  <p className="mt-1 text-sm text-foreground-muted">
+                  <p className="mt-1 text-sm text-neutral-600">
                     {study.client}
                   </p>
-                  <p className="mt-4 flex-1 text-sm leading-relaxed text-foreground-muted">
+                  <p className="mt-4 flex-1 text-sm leading-relaxed text-neutral-600">
                     {study.description}
                   </p>
-                  <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[rgba(255,255,255,0.06)] pt-6">
+                  <div className="mt-6 grid grid-cols-2 gap-4 border-t border-neutral-200 pt-6">
                     {study.stats.map((stat) => (
                       <div key={stat.label}>
-                        <p className="font-heading text-2xl font-bold text-white">
+                        <p className="font-heading text-2xl font-bold text-neutral-900">
                           {stat.value}
                         </p>
-                        <p className="mt-1 text-xs text-foreground-muted">
+                        <p className="mt-1 text-xs text-neutral-600">
                           {stat.label}
                         </p>
                       </div>

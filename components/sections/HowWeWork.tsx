@@ -36,20 +36,20 @@ const STEPS = [
 
 export function HowWeWork() {
   return (
-    <section id="how-we-work" className="bg-[#0a0a0a] py-24 md:py-32 lg:py-40">
+    <section id="how-we-work" className="bg-white py-24 md:py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 text-center">
         <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
+          <p className="font-mono text-xs uppercase tracking-[0.15em] text-neutral-500">
             How it works.
           </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
+          <h2 className="mt-4 font-heading text-3xl font-bold text-neutral-900 sm:text-4xl">
             Fixed scope. Fixed timeline. Working software in 7 days.
           </h2>
         </BlurFade>
 
         <div className="relative mt-16 grid grid-cols-1 gap-8 md:grid-cols-4">
           <div
-            className="absolute left-0 right-0 top-8 hidden border-t border-white/[0.05] md:block"
+            className="absolute left-0 right-0 top-8 hidden border-t border-neutral-200 md:block"
             aria-hidden
           />
           {STEPS.map((item, i) => {
@@ -58,14 +58,14 @@ export function HowWeWork() {
               <BlurFade key={item.step} inView delay={i * 0.12} inViewMargin="-50px">
                 <div className="relative flex flex-col items-center text-center">
                   <span
-                    className="font-heading text-6xl font-bold text-white/[0.04]"
+                    className="font-heading text-6xl font-bold text-neutral-200"
                     aria-hidden
                   >
                     {item.step}
                   </span>
                   <Icon className="mt-2 h-8 w-8 text-accent" aria-hidden />
-                  <h3 className="mt-4 font-heading font-bold text-white">{item.title}</h3>
-                  <p className="mt-2 text-sm text-foreground-muted">
+                  <h3 className="mt-4 font-heading font-bold text-neutral-900">{item.title}</h3>
+                  <p className="mt-2 text-sm text-neutral-600">
                     {item.description}
                   </p>
                 </div>

@@ -43,7 +43,7 @@ export function Navbar() {
       transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed left-0 right-0 top-0 z-50 h-16 transition-colors duration-300 ${
         scrolled
-          ? "border-b border-[rgba(255,255,255,0.06)] bg-black/80 backdrop-blur-xl"
+          ? "border-b border-neutral-200 bg-white/85 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -51,7 +51,7 @@ export function Navbar() {
         <Link
           href="#hero"
           onClick={(e) => handleNavClick(e, "#hero")}
-          className="font-heading text-sm font-bold tracking-wide text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded"
+          className="font-heading text-sm font-bold tracking-wide text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded"
           aria-label="MJS Consulting, go to top"
         >
           MJS
@@ -63,7 +63,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm text-white/60 transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded px-1"
+              className="text-sm text-neutral-600 transition hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white rounded px-1"
             >
               {link.label}
             </Link>
@@ -72,7 +72,7 @@ export function Navbar() {
             href={AUDIT_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white transition-all duration-200 hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/50 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
           >
             Get a Free Audit
           </a>
@@ -83,7 +83,7 @@ export function Navbar() {
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
           aria-expanded={mobileOpen}
           onClick={() => setMobileOpen(true)}
-          className="flex h-10 w-10 items-center justify-center rounded-lg text-white/60 transition hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black md:hidden"
+          className="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-600 transition hover:bg-neutral-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-white md:hidden"
         >
           <Menu className="h-6 w-6" />
         </button>
@@ -97,7 +97,7 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm md:hidden"
+              className="fixed inset-0 z-40 bg-black/30 backdrop-blur-sm md:hidden"
               aria-hidden
               onClick={() => setMobileOpen(false)}
             />
@@ -109,17 +109,17 @@ export function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "tween", duration: 0.3, ease: "easeOut" }}
-              className="fixed right-0 top-0 z-50 flex h-full w-full max-w-sm flex-col bg-[#0a0a0a] border-l border-[rgba(255,255,255,0.06)] md:hidden"
+              className="fixed right-0 top-0 z-50 flex h-full w-full max-w-sm flex-col bg-white border-l border-neutral-200 md:hidden"
             >
-              <div className="flex h-16 items-center justify-between border-b border-[rgba(255,255,255,0.06)] px-6">
-                <span className="font-heading text-sm font-bold tracking-wide text-white">
+              <div className="flex h-16 items-center justify-between border-b border-neutral-200 px-6">
+                <span className="font-heading text-sm font-bold tracking-wide text-neutral-900">
                   MJS
                 </span>
                 <button
                   type="button"
                   aria-label="Close menu"
                   onClick={() => setMobileOpen(false)}
-                  className="flex h-10 w-10 items-center justify-center rounded-lg text-white/60 transition hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-600 transition hover:bg-neutral-100 hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <X className="h-6 w-6" />
                 </button>
@@ -132,7 +132,7 @@ export function Navbar() {
                     onClick={(e) => {
                       handleNavClick(e, link.href, () => setMobileOpen(false));
                     }}
-                    className="rounded-lg px-4 py-3 text-sm text-white/70 transition hover:bg-white/5 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                    className="rounded-lg px-4 py-3 text-sm text-neutral-700 transition hover:bg-neutral-100 hover:text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {link.label}
                   </Link>
@@ -141,7 +141,7 @@ export function Navbar() {
                   href={AUDIT_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 w-full rounded-lg bg-white px-4 py-3 text-center text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
+                  className="mt-4 w-full rounded-lg bg-neutral-900 px-4 py-3 text-center text-sm font-medium text-white transition-all duration-200 hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900/50"
                   onClick={() => setMobileOpen(false)}
                 >
                   Get a Free Audit

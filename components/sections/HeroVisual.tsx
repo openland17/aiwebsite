@@ -53,8 +53,8 @@ function Sparkline({ data, accent }: { data: number[]; accent?: boolean }) {
         `${(i / (data.length - 1)) * w},${h - (d / max) * (h - 2) - 1}`
     )
     .join(" ");
-  const stroke = accent ? "#3b82f6" : "rgba(255,255,255,0.35)";
-  const fill = accent ? "rgba(59,130,246,0.15)" : "rgba(255,255,255,0.04)";
+  const stroke = accent ? "#2563eb" : "rgba(0,0,0,0.35)";
+  const fill = accent ? "rgba(37,99,235,0.15)" : "rgba(0,0,0,0.04)";
   return (
     <svg
       width={w}
@@ -90,36 +90,36 @@ export function HeroVisual() {
 
   return (
     <div
-      className="relative w-full max-w-[520px] overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.03] to-white/[0.01] shadow-[inset_0_0_0_1px_rgba(59,130,246,0.04)]"
+      className="relative w-full max-w-[520px] overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-[0_1px_3px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.08)]"
       aria-hidden
     >
       {/* Window chrome */}
-      <div className="flex items-center gap-2 border-b border-white/[0.06] bg-black/40 px-4 py-3.5">
-        <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
-        <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
-        <span className="ml-3 font-mono text-[11px] tracking-[0.08em] text-foreground-dim">
+      <div className="flex items-center gap-2 border-b border-neutral-200 bg-neutral-50 px-4 py-3.5">
+        <span className="h-2.5 w-2.5 rounded-full bg-neutral-300" />
+        <span className="h-2.5 w-2.5 rounded-full bg-neutral-200" />
+        <span className="h-2.5 w-2.5 rounded-full bg-neutral-200" />
+        <span className="ml-3 font-mono text-[11px] tracking-[0.08em] text-neutral-500">
           ops.mjs-consulting.com.au/dashboard
         </span>
         <span className="ml-auto flex items-center gap-1.5">
-          <span className="h-1.5 w-1.5 animate-live-pulse rounded-full bg-[#22c55e] shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
-          <span className="font-mono text-[10px] text-foreground-dim">
+          <span className="h-1.5 w-1.5 animate-live-pulse rounded-full bg-[#16a34a] shadow-[0_0_8px_rgba(22,163,74,0.5)]" />
+          <span className="font-mono text-[10px] text-neutral-500">
             LIVE
           </span>
         </span>
       </div>
 
       {/* Stat tiles */}
-      <div className="grid grid-cols-2 gap-px bg-white/[0.06]">
+      <div className="grid grid-cols-2 gap-px bg-neutral-200">
         {STATS.map((s) => (
-          <div key={s.label} className="bg-[#0a0a0a] px-5 py-4">
-            <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-foreground-dim">
+          <div key={s.label} className="bg-white px-5 py-4">
+            <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500">
               {s.label}
             </div>
-            <div className="mt-2 font-heading text-[28px] font-bold leading-none tracking-tight text-white">
+            <div className="mt-2 font-heading text-[28px] font-bold leading-none tracking-tight text-neutral-900">
               {s.unit}
               {s.value.toLocaleString()}
-              <span className="ml-1.5 font-mono text-[11px] font-normal text-[#22c55e]">
+              <span className="ml-1.5 font-mono text-[11px] font-normal text-[#16a34a]">
                 {s.delta}
               </span>
             </div>
@@ -130,7 +130,7 @@ export function HeroVisual() {
 
       {/* Venue table */}
       <div className="px-5 pb-4 pt-3.5">
-        <div className="grid grid-cols-[1.4fr_1fr_1fr_0.6fr] items-center border-b border-white/[0.06] py-2.5 font-mono text-[10px] uppercase tracking-[0.12em] text-foreground-dim">
+        <div className="grid grid-cols-[1.4fr_1fr_1fr_0.6fr] items-center border-b border-neutral-200 py-2.5 font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500">
           <span>Venue</span>
           <span>POS</span>
           <span>Reservations</span>
@@ -139,26 +139,26 @@ export function HeroVisual() {
         {venues.map((row) => (
           <div
             key={row.name}
-            className="grid grid-cols-[1.4fr_1fr_1fr_0.6fr] items-center border-b border-white/[0.04] py-2.5 text-[13px]"
+            className="grid grid-cols-[1.4fr_1fr_1fr_0.6fr] items-center border-b border-neutral-100 py-2.5 text-[13px]"
           >
-            <span className="font-medium text-white">{row.name}</span>
-            <span className="font-mono text-[12px] text-foreground-muted">
+            <span className="font-medium text-neutral-900">{row.name}</span>
+            <span className="font-mono text-[12px] text-neutral-600">
               {row.pos}
             </span>
-            <span className="font-mono text-[12px] text-foreground-muted">
+            <span className="font-mono text-[12px] text-neutral-600">
               {row.reservations}
             </span>
             <span className="flex items-center gap-1.5">
               <span
                 className={`h-1.5 w-1.5 rounded-full ${
                   row.syncOk
-                    ? "bg-[#22c55e] shadow-[0_0_6px_rgba(34,197,94,0.5)]"
-                    : "bg-[#f59e0b] shadow-[0_0_6px_rgba(245,158,11,0.5)]"
+                    ? "bg-[#16a34a] shadow-[0_0_6px_rgba(22,163,74,0.4)]"
+                    : "bg-[#d97706] shadow-[0_0_6px_rgba(217,119,6,0.4)]"
                 }`}
               />
               <span
                 className={`font-mono text-[10px] uppercase tracking-[0.1em] ${
-                  row.syncOk ? "text-[#22c55e]" : "text-[#f59e0b]"
+                  row.syncOk ? "text-[#16a34a]" : "text-[#d97706]"
                 }`}
               >
                 {row.syncOk ? "OK" : "SYNC"}
