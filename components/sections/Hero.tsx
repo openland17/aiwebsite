@@ -90,9 +90,10 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="mt-7 max-w-xl text-base leading-relaxed text-neutral-600 sm:text-lg"
           >
-            Operational tools for Brisbane construction, property, and
-            hospitality groups. Shipped in 1 to 2 weeks. Fixed scope, fixed
-            price, no middlemen.
+            Operational tools for Brisbane construction, property,
+            hospitality, and fitness &amp; wellness groups &mdash; gyms,
+            studios, and recovery centres. Shipped in 1 to 2 weeks. Fixed
+            scope, fixed price, no middlemen.
           </motion.p>
 
           <motion.div
