@@ -1,9 +1,8 @@
 const HEADLINE_CASE = {
-  client: "Engage Group",
-  industry: "Construction (commercial finishes), Brisbane",
-  build: "PARC Finishes Estimator",
+  title: "Finishes estimator with AI-powered plan analysis",
+  client: "Commercial construction client, Brisbane",
   description:
-    "A custom estimating tool with AI-powered plan analysis. Senior estimators were spending 4 to 8 hours per quote on commercial finishes takeoffs. The deployed system reads commercial plans, extracts the finishes scope, performs takeoffs against the materials database, and outputs a draft quote for senior review. Post-deployment estimator time per quote: 30 to 60 minutes.",
+    "A custom estimating tool. Senior estimators were spending 4 to 8 hours per quote on commercial finishes takeoffs. The deployed system reads commercial plans, extracts the finishes scope, performs takeoffs against the materials database, and outputs a draft quote for senior review. Post-deployment estimator time per quote: 30 to 60 minutes.",
   specs: [
     { label: "Build duration", value: "3 weeks" },
     { label: "Investment", value: "$5,500" },
@@ -33,15 +32,12 @@ export function SelectedWork() {
                 Headline case
               </p>
               <h3 className="mt-3 text-xl font-semibold tracking-tight text-ink sm:text-2xl">
-                {HEADLINE_CASE.client}
+                {HEADLINE_CASE.title}
               </h3>
               <p className="mt-1 text-sm text-ink-muted">
-                {HEADLINE_CASE.industry}
+                {HEADLINE_CASE.client}
               </p>
-              <p className="mt-6 text-base font-medium text-ink">
-                {HEADLINE_CASE.build}
-              </p>
-              <p className="mt-3 text-body text-ink-muted">
+              <p className="mt-6 text-body text-ink-muted">
                 {HEADLINE_CASE.description}
               </p>
 
