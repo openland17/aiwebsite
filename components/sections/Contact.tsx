@@ -7,7 +7,7 @@ export function Contact() {
         <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-orange">
-              06
+              05
             </p>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
               Contact
@@ -23,11 +23,9 @@ export function Contact() {
             <dl className="mt-10 divide-y divide-rule border-y border-rule">
               <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
                 <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
-                  Principal
+                  {CONTACT.role}
                 </dt>
-                <dd className="text-body text-ink">
-                  {CONTACT.principal}, {CONTACT.role}
-                </dd>
+                <dd className="text-body text-ink">{CONTACT.principal}</dd>
               </div>
               <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
                 <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">

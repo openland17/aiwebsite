@@ -1,10 +1,5 @@
 const SPECS = [
   {
-    label: "Investment",
-    value:
-      "From $20,000 + GST. Fixed fee, agreed prior to commencement.",
-  },
-  {
     label: "Duration",
     value:
       "Typically 4 to 12 weeks from kickoff to launch, scoped per engagement.",

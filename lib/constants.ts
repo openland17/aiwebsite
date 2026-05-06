@@ -13,7 +13,7 @@ export const NAV_LINKS = [
 
 export const CONTACT = {
   principal: "Matt Smith",
-  role: "Principal",
+  role: "Founder",
   email: "matt@mjs-consulting.com.au",
   phone: "0407 733 940",
   phoneIntl: "+61407733940",

@@ -13,7 +13,7 @@ export function About() {
         <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
           <div>
             <p className="text-xs font-medium uppercase tracking-[0.18em] text-orange">
-              05
+              04
             </p>
             <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
               About
