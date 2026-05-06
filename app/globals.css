@@ -3,53 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --background: #000000;
-  --background-secondary: #0a0a0a;
-  --background-tertiary: #111111;
-  --foreground: #e5e7eb;
-  --foreground-muted: #9ca3af;
-  --foreground-dim: #6b7280;
-  --accent: #3b82f6;
-  --accent-glow: rgba(59, 130, 246, 0.15);
-  --border: rgba(255, 255, 255, 0.06);
-  --border-hover: rgba(255, 255, 255, 0.12);
-  --card-bg: rgba(255, 255, 255, 0.02);
+  --background: #ffffff;
+  --background-muted: #f7f7f5;
+  --ink: #111418;
+  --ink-muted: #5b6470;
+  --ink-dim: #8a939e;
+  --rule: #e4e7eb;
+  --rule-strong: #c8ccd2;
+  --navy: #1f3b5b;
+  --navy-hover: #15293f;
+  --orange: #c7541f;
 }
 
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: var(--foreground);
-  overflow-x: hidden;
+  color: var(--ink);
   background: var(--background);
+  overflow-x: hidden;
   min-height: 100vh;
+  font-feature-settings: "ss01", "cv11";
+}
+
+::selection {
+  background: var(--navy);
+  color: #ffffff;
+}
+
+a {
+  color: var(--navy);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: var(--navy-hover);
+  text-decoration: underline;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: none;
+  outline: 2px solid var(--navy);
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--background);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
+  background: var(--rule-strong);
+  border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.1) #0a0a0a;
+  background: var(--ink-dim);
 }
 
 @layer utilities {

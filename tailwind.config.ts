@@ -9,38 +9,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#000000",
-        "background-secondary": "#0a0a0a",
-        "background-tertiary": "#111111",
-        foreground: "#e5e7eb",
-        "foreground-muted": "#9ca3af",
-        "foreground-dim": "#6b7280",
-        accent: "#3b82f6",
-        "accent-glow": "rgba(59, 130, 246, 0.15)",
-        border: "rgba(255, 255, 255, 0.06)",
-        "border-hover": "rgba(255, 255, 255, 0.12)",
-        "card-bg": "rgba(255, 255, 255, 0.02)",
+        background: "#ffffff",
+        "background-muted": "#f7f7f5",
+        ink: "#111418",
+        "ink-muted": "#5b6470",
+        "ink-dim": "#8a939e",
+        rule: "#e4e7eb",
+        "rule-strong": "#c8ccd2",
+        navy: "#1f3b5b",
+        "navy-hover": "#15293f",
+        orange: "#c7541f",
       },
       fontFamily: {
-        sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
-        heading: ["var(--font-outfit)", "system-ui", "sans-serif"],
-        mono: ["var(--font-ibm-plex-mono)", "monospace"],
+        sans: ["var(--font-inter)", "Helvetica Neue", "Helvetica", "Arial", "system-ui", "sans-serif"],
       },
-      animation: {
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "fade-in-up": "fade-in-up 0.5s ease-out forwards",
-        "fade-in-down": "fade-in-down 0.5s ease-out forwards",
-      },
-      keyframes: {
-        "fade-in": { "0%": { opacity: "0" }, "100%": { opacity: "1" } },
-        "fade-in-up": {
-          "0%": { opacity: "0", transform: "translateY(16px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "fade-in-down": {
-          "0%": { opacity: "0", transform: "translateY(-16px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
+      fontSize: {
+        body: ["1.0625rem", { lineHeight: "1.65" }],
+        "body-lg": ["1.125rem", { lineHeight: "1.65" }],
       },
     },
   },

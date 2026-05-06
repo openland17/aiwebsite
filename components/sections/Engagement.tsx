@@ -1,59 +1,74 @@
-"use client";
-
-import { BlurFade } from "@/components/magicui/blur-fade";
-
-const STATEMENTS = [
+const SPECS = [
   {
-    title: "Fixed scope, fixed timeline.",
-    body:
-      "We agree on what you're getting before a line of code is written.",
+    label: "Investment",
+    value:
+      "From $20,000 + GST. Fixed fee, agreed prior to commencement.",
   },
   {
-    title: "Working software in 7 days.",
-    body: "You see real progress in week one, not a Gantt chart.",
+    label: "Duration",
+    value:
+      "Typically 4 to 12 weeks from kickoff to launch, scoped per engagement.",
   },
   {
-    title: "Most projects ship in 1 to 2 weeks.",
-    body:
-      "Bigger builds are scoped in phases so you see value early.",
+    label: "Payment terms",
+    value: "50% deposit on signed proposal. 50% balance on launch.",
   },
   {
-    title: "Ongoing support is optional.",
-    body: "Monthly retainer or pay-as-you-go. No lock-in.",
+    label: "Deliverable",
+    value:
+      "A defined piece of production software, integrated with the client's existing tools, deployed to the client's environment.",
+  },
+  {
+    label: "Engagement format",
+    value:
+      "Fixed scope. Weekly working software demonstrations. Defined acceptance criteria documented in the proposal.",
+  },
+  {
+    label: "Performance guarantee",
+    value:
+      "A measurable ROI metric is agreed in writing prior to commencement. If the deployed system has not achieved the agreed metric within 90 days of launch, work continues at no additional cost until the metric is met.",
+  },
+  {
+    label: "Client receives",
+    value:
+      "Full source code and intellectual property transfer on final payment. All credentials and infrastructure access. Architecture diagrams, written runbook, and evaluation reports. 30 days of post-launch support.",
+  },
+  {
+    label: "Optional ongoing support",
+    value:
+      "From $3,500 per month + GST. Monitoring, model retraining, scoped iteration hours, one business day issue response, and quarterly review. Three-month minimum term. Most deployed systems operate reliably for the first year without it.",
   },
 ] as const;
 
 export function Engagement() {
   return (
-    <section id="engagement" className="bg-[#0a0a0a] py-24 md:py-32 lg:py-40">
-      <div className="mx-auto max-w-7xl px-6">
-        <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
-            Engagement
-          </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            How engagements work
-          </h2>
-        </BlurFade>
+    <section id="engagements" className="border-b border-rule bg-background py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-orange">
+              03
+            </p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+              How engagements work
+            </h2>
+          </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded-xl border border-white/[0.06] bg-white/[0.04] sm:grid-cols-2">
-          {STATEMENTS.map((item, i) => (
-            <BlurFade
-              key={item.title}
-              inView
-              delay={i * 0.08}
-              inViewMargin="-50px"
-            >
-              <div className="h-full bg-[#0a0a0a] p-8">
-                <h3 className="font-heading text-lg font-semibold text-white">
-                  {item.title}
-                </h3>
-                <p className="mt-3 text-sm leading-relaxed text-foreground-muted">
-                  {item.body}
-                </p>
-              </div>
-            </BlurFade>
-          ))}
+          <div className="max-w-3xl">
+            <dl className="divide-y divide-rule border-y border-rule">
+              {SPECS.map((spec) => (
+                <div
+                  key={spec.label}
+                  className="grid gap-3 py-6 md:grid-cols-[200px_1fr] md:gap-8"
+                >
+                  <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
+                    {spec.label}
+                  </dt>
+                  <dd className="text-body text-ink">{spec.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
         </div>
       </div>
     </section>

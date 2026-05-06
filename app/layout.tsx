@@ -1,31 +1,18 @@
 import type { Metadata } from "next";
-import { DM_Sans, Outfit, IBM_Plex_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const dmSans = DM_Sans({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
-  weight: ["400", "500"],
-});
-
-const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  weight: ["600", "700"],
-});
-
-const ibmPlexMono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
-  weight: ["400", "500"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 const SITE_URL = "https://mjs-consulting.com.au";
-const SITE_TITLE =
-  "MJS Consulting: Custom Software for Operations-Heavy Businesses";
+const SITE_TITLE = "MJS Consulting: Custom software for Australian businesses";
 const SITE_DESCRIPTION =
-  "Custom operational software for construction, property, and hospitality businesses. Shipped in 1 to 2 weeks. Brisbane-based, working with businesses across Australia.";
+  "MJS Consulting builds custom software for Australian businesses, with AI capabilities integrated where they add value. Brisbane-based, fixed-fee engagements from $20,000 + GST.";
 
 export const metadata: Metadata = {
   title: SITE_TITLE,
@@ -40,6 +27,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: "MJS Consulting",
     type: "website",
+    locale: "en_AU",
   },
   twitter: {
     card: "summary_large_image",
@@ -54,11 +42,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${dmSans.variable} ${outfit.variable} ${ibmPlexMono.variable}`}
-    >
-      <body className={`${dmSans.className} antialiased`}>
+    <html lang="en-AU" className={inter.variable}>
+      <body className="font-sans antialiased">
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-KC8HYD938V"
           strategy="afterInteractive"

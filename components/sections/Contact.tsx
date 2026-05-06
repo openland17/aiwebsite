@@ -1,65 +1,80 @@
-"use client";
-
-import { CONTACT, AUDIT_URL } from "@/lib/constants";
-import { BlurFade } from "@/components/magicui/blur-fade";
-import Aurora from "@/components/reactbits/Aurora";
+import { CONTACT } from "@/lib/constants";
 
 export function Contact() {
   return (
-    <section
-      id="contact"
-      className="relative overflow-hidden bg-black py-32 md:py-40 lg:py-48"
-    >
-      <Aurora
-        colorStops={["#0a0a2e", "#1e3a5f", "#0a0a2e"]}
-        blend={0.25}
-        amplitude={0.6}
-        speed={0.3}
-        className="pointer-events-none opacity-40"
-      />
-      <div className="absolute inset-0 bg-black/60" aria-hidden />
-
-      <div className="relative z-10 mx-auto max-w-3xl px-6 text-center">
-        <BlurFade inView inViewMargin="-100px">
-          <h2 className="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl md:text-6xl">
-            Get a free operations audit.
-          </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground-muted sm:text-lg">
-            60 minutes, on-site or over video. We walk through your current
-            workflows and send you back a written summary of the three biggest
-            automation opportunities in your business. What to fix, what it
-            would take, and what to ignore. No pitch at the end.
-          </p>
-
-          <div className="mt-10 flex justify-center">
-            <a
-              href={AUDIT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg bg-white px-10 py-4 text-base font-medium text-black transition-all duration-200 hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              Book Your Audit
-            </a>
+    <section id="contact" className="border-b border-rule bg-background-muted py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-orange">
+              06
+            </p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+              Contact
+            </h2>
           </div>
 
-          <p className="mt-6 text-sm text-foreground-muted">
-            <a
-              href={`mailto:${CONTACT.email}`}
-              className="rounded transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              {CONTACT.email}
-            </a>
-            <span aria-hidden className="mx-2 text-foreground-dim">
-              ·
-            </span>
-            <a
-              href={`tel:${CONTACT.phone.replace(/\s/g, "")}`}
-              className="rounded transition hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-            >
-              {CONTACT.phone}
-            </a>
-          </p>
-        </BlurFade>
+          <div className="max-w-3xl">
+            <p className="text-body text-ink-muted">
+              The fastest way to start a conversation is by email. A 30-minute
+              call can be arranged once initial scope is understood.
+            </p>
+
+            <dl className="mt-10 divide-y divide-rule border-y border-rule">
+              <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
+                <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
+                  Principal
+                </dt>
+                <dd className="text-body text-ink">
+                  {CONTACT.principal}, {CONTACT.role}
+                </dd>
+              </div>
+              <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
+                <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
+                  Email
+                </dt>
+                <dd className="text-body">
+                  <a
+                    href={`mailto:${CONTACT.email}`}
+                    className="text-navy hover:text-navy-hover"
+                  >
+                    {CONTACT.email}
+                  </a>
+                </dd>
+              </div>
+              <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
+                <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
+                  Phone
+                </dt>
+                <dd className="text-body">
+                  <a
+                    href={`tel:${CONTACT.phoneIntl}`}
+                    className="text-navy hover:text-navy-hover"
+                  >
+                    {CONTACT.phone}
+                  </a>
+                </dd>
+              </div>
+              <div className="grid gap-2 py-5 md:grid-cols-[200px_1fr] md:gap-8">
+                <dt className="text-sm font-medium uppercase tracking-[0.1em] text-ink-dim">
+                  Location
+                </dt>
+                <dd className="text-body text-ink">
+                  {CONTACT.location}. Clients across Australia.
+                </dd>
+              </div>
+            </dl>
+
+            <div className="mt-10">
+              <a
+                href={`mailto:${CONTACT.email}`}
+                className="inline-flex items-center bg-navy px-7 py-3 text-sm font-medium text-white no-underline transition-colors hover:bg-navy-hover hover:text-white hover:no-underline"
+              >
+                Send an email
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

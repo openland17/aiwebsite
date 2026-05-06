@@ -1,29 +1,55 @@
-"use client";
-
-import { BlurFade } from "@/components/magicui/blur-fade";
+const CERTIFICATIONS = [
+  "Salesforce Administrator",
+  "Agentforce Specialist",
+  "PSPO I",
+  "ServiceNow BPA",
+  "Stanford Machine Learning",
+] as const;
 
 export function About() {
   return (
-    <section id="about" className="bg-black py-24 md:py-32 lg:py-40">
-      <div className="mx-auto max-w-3xl px-6 text-center">
-        <BlurFade inView inViewMargin="-100px">
-          <p className="font-mono text-xs uppercase tracking-[0.15em] text-foreground-dim">
-            About
-          </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
-            Why MJS
-          </h2>
-          <p className="mt-8 text-base leading-relaxed text-foreground-muted">
-            MJS Consulting is run by Matt Smith, a Brisbane-based software
-            consultant who builds operational tools for businesses across
-            Australia. We focus on construction, property, and hospitality
-            because that&apos;s where we have the strongest track record, but
-            the underlying problem is the same across operations-heavy
-            industries. No middlemen, no offshore teams, no project managers
-            between you and the person writing the code. You talk to the
-            builder. The builder ships the work.
-          </p>
-        </BlurFade>
+    <section id="about" className="border-b border-rule bg-background py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="grid gap-12 md:grid-cols-[200px_1fr] md:gap-16">
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-orange">
+              05
+            </p>
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+              About
+            </h2>
+          </div>
+
+          <div className="max-w-3xl">
+            <p className="text-body text-ink-muted">
+              MJS Consulting is operated by Matt Smith. Six years in software
+              development, with prior background in Queensland Government
+              enterprise IT at the Department of Justice and Attorney-General.
+              Concurrent advanced machine learning certification at the
+              University of New South Wales and a Master of Information
+              Technology in Artificial Intelligence at the Queensland University
+              of Technology, in progress.
+            </p>
+
+            <div className="mt-10 border-t border-rule pt-8">
+              <p className="text-sm font-medium uppercase tracking-[0.12em] text-ink-dim">
+                Certifications held
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-ink">
+                {CERTIFICATIONS.map((cert, i) => (
+                  <li key={cert} className="flex items-center gap-x-6">
+                    <span>{cert}</span>
+                    {i < CERTIFICATIONS.length - 1 && (
+                      <span aria-hidden className="text-rule-strong">
+                        /
+                      </span>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
