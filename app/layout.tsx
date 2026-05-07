@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 const SITE_URL = "https://mjs-consulting.com.au";
-const SITE_TITLE = "MJS Consulting: Custom software for Australian businesses";
+const SITE_TITLE = "MJS Consulting: Custom AI for Australian businesses";
 const SITE_DESCRIPTION =
   "MJS Consulting builds custom software for Australian businesses, with AI capabilities integrated where they add value. Brisbane-based, fixed-fee engagements from $20,000 + GST.";
 

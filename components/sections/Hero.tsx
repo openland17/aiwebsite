@@ -11,7 +11,7 @@ export function Hero() {
           MJS Consulting
         </p>
         <h1 className="mt-8 text-balance text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-5xl md:text-6xl">
-          Custom software for Australian businesses.
+          Custom AI for Australian businesses.
         </h1>
         <p className="mt-8 max-w-2xl text-body-lg text-ink-muted">
           Custom applications and AI capabilities integrated into existing
