@@ -14,10 +14,9 @@ export function Hero() {
           Custom software for Australian businesses.
         </h1>
         <p className="mt-8 max-w-2xl text-body-lg text-ink-muted">
-          MJS Consulting builds custom applications and tools for defined
-          business processes, with AI capabilities integrated where they add
-          value. Engagements are fixed scope and fixed fee, agreed in writing
-          before work begins.
+          Custom applications and AI capabilities integrated into existing
+          business software. The deliverable is production software, deployed
+          to the client&apos;s environment.
         </p>
         <div className="mt-12">
           <Link
