@@ -15,7 +15,7 @@ const ENGAGEMENT_TYPES = [
       "Lead prioritisation, customer scoring, churn prediction, donor intelligence, and risk classification.",
   },
   {
-    title: "AI capabilities added to existing software",
+    title: "AI added to your existing stack",
     description:
       "CRM enrichment, accounting platform extensions, and internal tool augmentation.",
   },
@@ -40,10 +40,8 @@ export function Services() {
 
           <div className="max-w-3xl">
             <p className="text-body text-ink-muted">
-              MJS Consulting builds custom software and integrates AI
-              capabilities into existing business tools. The deliverable is
-              production software, deployed to the client&apos;s environment,
-              with full source code transferred on completion.
+              Four service areas, all delivered as production software with
+              full source code transferred on completion.
             </p>
 
             <dl className="mt-12 divide-y divide-rule border-t border-rule">

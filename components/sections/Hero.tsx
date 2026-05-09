@@ -14,9 +14,8 @@ export function Hero() {
           Custom AI for Australian businesses.
         </h1>
         <p className="mt-8 max-w-2xl text-body-lg text-ink-muted">
-          Custom applications and AI capabilities integrated into existing
-          business software. The deliverable is production software, deployed
-          to the client&apos;s environment.
+          Custom software and AI integrations, built around the tools your
+          team already uses.
         </p>
         <div className="mt-12">
           <Link
